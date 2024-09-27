@@ -1,0 +1,20 @@
+.nano {
+  overflow: hidden;
+}
+
+.nano>.nano-content {
+  padding : 10px;
+  overflow: auto;
+}
+
+.nano>.nano-pane {
+  background: #ffffff;
+  width     : 10px;
+  height    : 92%;
+  top       : 4%;
+}
+
+.nano>.nano-pane>.nano-slider {
+  background: #3a4a6d;
+  width     : 10px;
+}

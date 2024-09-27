@@ -1,0 +1,5 @@
+>div.sidebar-for-window.nano#sidebar
+  >div.nano-content.active
+    >div.logo
+      >a.href="../index.html"
+        .USTC 2024
