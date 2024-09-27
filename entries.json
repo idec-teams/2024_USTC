@@ -1,0 +1,14 @@
+{
+  "entries": {
+    "index": "./src/index.js",
+    "home": "./src/home.js",
+    "jquery": "./src/jquery.min.js",
+    "nanoscroller": "./src/jquery.nanoscroller.min.js"
+  },
+  "pages": [
+    {
+      "location": "index",
+      "chunks": ["index", "jquery", "nanoscroller"]
+    }
+  ]
+}
