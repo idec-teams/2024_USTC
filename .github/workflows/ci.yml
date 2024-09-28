@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "GitHub Actions"
-          git config --global user.email "your_email@example.com"
+          git config --global user.email "zchong_xu@mail.ustc.edu.cn"
           git checkout gh-pages || git checkout --orphan gh-pages
           rm -rf *
           if [ -d public ]; then
@@ -41,9 +41,11 @@ jobs:
             echo "public directory does not exist"
             exit 1
           fi
+      
           git add .
           git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
           git push origin gh-pages
+      
       
       # - name: Clean public folder
       #   run: rm -rf ./public/*  # 删除 public 文件夹中的所有内容
