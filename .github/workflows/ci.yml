@@ -25,6 +25,9 @@ jobs:
 
       - name: Run Webpack build
         run: npm run produce  # 运行你在 package.json 中定义的生产打包命令
+        
+      - name: List public directory
+        run: ls -R public || echo "public directory does not exist"
 
       - name: Deploy to GitHub Pages
         run: |
