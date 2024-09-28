@@ -4,8 +4,8 @@
   "main": "jquery.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development --env production=false",
-    "produce": "webpack --mode production --env production=true"
+    "dev": "webpack --env production=false",
+    "produce": "webpack --env production=true"
   },
   "keywords": [],
   "author": "",
