@@ -26,6 +26,9 @@ jobs:
       - name: Run Webpack build
         run: npm run produce  # 运行你在 package.json 中定义的生产打包命令
 
+      - name: List public folder
+        run: ls -al ./public
+
       # - name: Clean public folder
       #   run: rm -rf ./public/*  # 删除 public 文件夹中的所有内容
 
