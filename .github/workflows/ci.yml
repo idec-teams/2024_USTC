@@ -26,6 +26,11 @@ jobs:
       - name: Run Webpack build
         run: npm run produce  # 运行你在 package.json 中定义的生产打包命令
 
+      # - name: Clean public folder
+      #   run: rm -rf ./public/*  # 删除 public 文件夹中的所有内容
+
+      # - name: Copy build output to public folder
+      #   run: cp -R ./dist/* ./public/  # 假设打包输出在 dist 文件夹
       # - name: Deploy to GitHub Pages
       #   run: npm run gh-pages
   # 这里替换为你的部署命令

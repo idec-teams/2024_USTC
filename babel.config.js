@@ -1,15 +1,19 @@
-const path               = require( 'path' );
+const path = require("path");
+
 module.exports = {
-  presets: ['@babel/preset-env'],
+  presets: ["@babel/preset-env"],
   plugins: [
     [
-      'module-resolver',
+      "module-resolver",
       {
         alias: {
-				'@root'      : path.resolve( __dirname ),
-				'@src'       : path.resolve( __dirname, "src/" ),
+          "@root": path.resolve(__dirname),
+          "@src": path.resolve(__dirname, "src/"),
         },
       },
     ],
+  ],
+  ignore: [
+    "*.txt",
   ],
 };
