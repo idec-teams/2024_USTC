@@ -9,20 +9,14 @@
   >div.nano.sidebar-contain
     >div.nano-content.sidebar-itembox    
       >ul
-        >li.sidebar-sub-toggle
-          >a
-            %href={{href=#}}
-            >span.text
-              .Team
-        >ul.nav-bar 
-          +memberItem
-        >li.sidebar-sub-toggle
-          >a
-            %href={{href=#}}
-            >span.text
-              .Future
-        >ul.nav-bar 
-          +futureItem
+        
+        * >li.sidebar-sub-toggle
+        *   >a
+        *     %href={{href=#}}
+        *     >span.text
+        *       .Future
+        * >ul.nav-bar 
+        *   +futureItem
   >div.bottom-contain
     >li.mode
       >div.sun-moon

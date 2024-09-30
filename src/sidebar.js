@@ -5,22 +5,20 @@ import "@src/jquery.nanoscroller.min.js";
 import "@src/sidebar.css";
 import "@src/themify-icons.css";
 import Sidebar from "@src/sidebar.eft";
+import Sidebarsubtoggle from "@src/sidebarsubtoggle.eft";
 import Sidebaritem from "@src/sidebaritem.eft";
+import sidebarlist from "./sidebarlist.js";
 
-const sidebar = new Sidebar();
-// sidebar.sidebarItem.push(
-//   new Sidebaritem({
-//     $data: { itemName: "Members" },
-//   })
-// );
-const sidebarlist = {
-  member: [{ itemName: "member", href: "home.html" }],
-  future: [{ itemName: "future", href: "home.html" }],
-};
+new Sidebar().$mount({ target: document.body });
 for (let [key, value] of Object.entries(sidebarlist)) {
+  const sidebarsubtoggle = new Sidebarsubtoggle({
+    $data: {
+      itemName: key,
+      href: value.link.href,
+    },
+  });
   let array = [];
-
-  value.forEach(function (element) {
+  value.item.forEach(function (element) {
     array.push(
       new Sidebaritem({
         $data: {
@@ -30,9 +28,15 @@ for (let [key, value] of Object.entries(sidebarlist)) {
       })
     );
   });
-  sidebar[key + "Item"] = array;
+  sidebarsubtoggle["list"] = array;
+  sidebarsubtoggle.$mount({
+    target: document.querySelector(".sidebar-itembox> ul:first-of-type"),
+    option: {
+      append: true,
+    },
+  });
 }
-sidebar.$mount({ target: document.body });
+
 //切换侧边栏开关
 let changeWidth = 250;
 $(".checkbox").on("click", function () {
