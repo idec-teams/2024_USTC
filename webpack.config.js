@@ -36,6 +36,13 @@ module.exports = (env) => {
       path: path.resolve(__dirname, "public"), //输出地址
       clean: true, //是否清理输出目录
     },
+    devServer: {
+      static: {
+        directory: path.join(__dirname, "public"),
+      },
+      compress: true,
+      port: 9000,
+    },//自动打包工具
     module: {
       rules,
     },
@@ -78,12 +85,12 @@ module.exports = (env) => {
     optimization: {
       chunkIds: "named",
       usedExports: true,
-      minimize: true,
-      minimizer: [
-        new TerserPlugin({
-          extractComments: false,
-        }),
-      ],
+      // minimize: true,//压缩代码
+      // minimizer: [
+      //   new TerserPlugin({
+      //     extractComments: false,
+      //   }),
+      // ],
     },
   };
 

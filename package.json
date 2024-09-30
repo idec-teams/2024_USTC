@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --env production=false",
-    "produce": "webpack --env production=true"
+    "produce": "webpack --env production=true",
+    "start": "webpack serve --open"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +29,7 @@
   },
   "dependencies": {
     "jquery": "^3.7.1",
-    "webpack": "^5.95.0"
+    "webpack": "^5.95.0",
+    "webpack-dev-server": "^5.1.0"
   }
 }

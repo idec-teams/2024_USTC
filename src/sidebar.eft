@@ -1,5 +1,36 @@
->div.sidebar-for-window.nano#sidebar
-  >div.nano-content.active
-    >div.logo
-      >a.href="../index.html"
-        .USTC 2024
+>nav.sidebar-for-window
+  #id=sidebar
+  >div.checkbox
+  >div.logo
+    >a
+      #href=#
+      .USTC 2024 
+  >div.search-box
+  >div.nano.sidebar-contain
+    >div.nano-content.sidebar-itembox    
+      >ul
+        >li.sidebar-sub-toggle
+          >a
+            %href={{href=#}}
+            >span.text
+              .Team
+        >ul.nav-bar 
+          +memberItem
+        >li.sidebar-sub-toggle
+          >a
+            %href={{href=#}}
+            >span.text
+              .Future
+        >ul.nav-bar 
+          +futureItem
+  >div.bottom-contain
+    >li.mode
+      >div.sun-moon
+        >i.iconfont.icon.icon-rijian.sun
+        >i.iconfont.icon.icon-yejian.moon
+      >span.mode-text.text
+        .白天模式
+      >div.toggle-switch
+        >span.switch
+  >div.nano-pane
+    >div.nano-slider

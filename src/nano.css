@@ -3,18 +3,17 @@
 }
 
 .nano>.nano-content {
-  padding : 10px;
   overflow: auto;
 }
 
 .nano>.nano-pane {
-  background: #ffffff;
-  width     : 10px;
+  background: #ffffff00;
+  width     : 12px;
   height    : 92%;
   top       : 4%;
 }
 
 .nano>.nano-pane>.nano-slider {
-  background: #3a4a6d;
+  background: #555555;
   width     : 10px;
 }
