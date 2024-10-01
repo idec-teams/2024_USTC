@@ -2869,7 +2869,7 @@ const mountOptions = {
 /* harmony export */ });
 /* harmony import */ var ef_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ef-core */ "./node_modules/ef-core/src/ef-core.js");
 
-class Sidebar extends (0,ef_core__WEBPACK_IMPORTED_MODULE_0__.create)([{t:'nav',a:{class:'sidebar-for-window',id:'sidebar'}},[{t:'div',a:{class:'checkbox'}}],[{t:'div',a:{class:'logo'}},[{t:'a',a:{href:'#'}},'USTC 2024 ']],[{t:'div',a:{class:'search-box'}}],[{t:'div',a:{class:'nano sidebar-contain'}},[{t:'div',a:{class:'nano-content sidebar-itembox'}},[{t:'ul'}]]],[{t:'div',a:{class:'bottom-contain'}},[{t:'li',a:{class:'mode'}},[{t:'div',a:{class:'sun-moon'}},[{t:'i',a:{class:'iconfont icon icon-rijian sun'}}],[{t:'i',a:{class:'iconfont icon icon-yejian moon'}}]],[{t:'span',a:{class:'mode-text text'}},'白天模式'],[{t:'div',a:{class:'toggle-switch'}},[{t:'span',a:{class:'switch'}}]]]],[{t:'div',a:{class:'nano-pane'}},[{t:'div',a:{class:'nano-slider'}}]]]) {
+class Sidebar extends (0,ef_core__WEBPACK_IMPORTED_MODULE_0__.create)([{t:'nav',a:{class:'sidebar-for-window',id:'sidebar'}},[{t:'div',a:{class:'checkbox'}}],[{t:'a',a:{href:'home.html'}},[{t:'div',a:{class:'logo'}},'USTC 2024 ']],[{t:'div',a:{class:'search-box'}}],[{t:'div',a:{class:'nano sidebar-contain'}},[{t:'div',a:{class:'nano-content sidebar-itembox'}},[{t:'ul'}]]],[{t:'div',a:{class:'bottom-contain'}},[{t:'li',a:{class:'mode'}},[{t:'div',a:{class:'sun-moon'}},[{t:'i',a:{class:'iconfont icon icon-rijian sun'}}],[{t:'i',a:{class:'iconfont icon icon-yejian moon'}}]],[{t:'span',a:{class:'mode-text text'}},'白天模式'],[{t:'div',a:{class:'toggle-switch'}},[{t:'span',a:{class:'switch'}}]]]],[{t:'div',a:{class:'nano-pane'}},[{t:'div',a:{class:'nano-slider'}}]]]) {
 };
 
 
@@ -2905,7 +2905,7 @@ class Sidebaritem extends (0,ef_core__WEBPACK_IMPORTED_MODULE_0__.create)([{t:'a
 /* harmony export */ });
 /* harmony import */ var ef_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ef-core */ "./node_modules/ef-core/src/ef-core.js");
 
-class Sidebarsubtoggle extends (0,ef_core__WEBPACK_IMPORTED_MODULE_0__.create)([{t:'a',p:[[['href'],[0,[['href'],'#']]]]},[{t:'li',a:{class:[['sidebar-sub-toggle ',''],[['itemName']]]}},[{t:'span',a:{class:'text'}},[['itemName'],'Team']]],[{t:'ul',a:{class:'nav-bar'}},{n:'list',t:1}]]) {
+class Sidebarsubtoggle extends (0,ef_core__WEBPACK_IMPORTED_MODULE_0__.create)([{t:'a',p:[[['href'],[0,[['href']]]]]},[{t:'li',a:{class:[['sidebar-sub-toggle ',''],[['itemName']]]}},[{t:'i',a:{class:[['','icon'],[['itemName']]]}}],[{t:'span',a:{class:'text'}},[['itemName'],'Team']],[{t:'i',a:{class:[['sidebar-sub-icon ',''],[['href']]]}}]],[{t:'ul',a:{class:'nav-bar'}},{n:'list',t:1}]]) {
 };
 
 
@@ -13638,10 +13638,10 @@ return jQuery;
 
 /***/ }),
 
-/***/ "./src/nanoscroller.css":
-/*!******************************!*\
-  !*** ./src/nanoscroller.css ***!
-  \******************************/
+/***/ "./src/nano.css":
+/*!**********************!*\
+  !*** ./src/nano.css ***!
+  \**********************/
 /***/ (() => {
 
 "use strict";
@@ -13650,9 +13650,9 @@ return jQuery;
 
 /***/ }),
 
-/***/ "./src/sidebar/nano.css":
+/***/ "./src/nanoscroller.css":
 /*!******************************!*\
-  !*** ./src/sidebar/nano.css ***!
+  !*** ./src/nanoscroller.css ***!
   \******************************/
 /***/ (() => {
 
@@ -13763,7 +13763,7 @@ var __webpack_exports__ = {};
 /*!********************************!*\
   !*** ./src/sidebar/sidebar.js ***!
   \********************************/
-/* harmony import */ var _nano_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nano.css */ "./src/sidebar/nano.css");
+/* harmony import */ var _src_nano_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @src/nano.css */ "./src/nano.css");
 /* harmony import */ var _src_nanoscroller_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @src/nanoscroller.css */ "./src/nanoscroller.css");
 /* harmony import */ var _src_jquery_nanoscroller_min_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @src/jquery.nanoscroller.min.js */ "./src/jquery.nanoscroller.min.js");
 /* harmony import */ var _src_jquery_nanoscroller_min_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_src_jquery_nanoscroller_min_js__WEBPACK_IMPORTED_MODULE_2__);
