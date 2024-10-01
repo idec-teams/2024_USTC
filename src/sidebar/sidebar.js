@@ -2,13 +2,12 @@
 import "@src/nano.css";
 import "@src/nanoscroller.css";
 import "@src/jquery.nanoscroller.min.js";
-import "@src/sidebar.css";
-import "@src/themify-icons.css";
-import Sidebar from "@src/sidebar.eft";
-import Sidebarsubtoggle from "@src/sidebarsubtoggle.eft";
-import Sidebaritem from "@src/sidebaritem.eft";
-import sidebarlist from "./sidebarlist.js";
-
+import "./sidebar.css";
+// import "@src/sidebar/themify-icons.css";
+import Sidebar from "./sidebar.eft";
+import Sidebarsubtoggle from "./sidebarsubtoggle.eft";
+import Sidebaritem from "./sidebaritem.eft";
+import sidebarlist from "./sidebarlist.json";
 new Sidebar().$mount({ target: document.body });
 for (let [key, value] of Object.entries(sidebarlist)) {
   const sidebarsubtoggle = new Sidebarsubtoggle({
@@ -40,7 +39,7 @@ for (let [key, value] of Object.entries(sidebarlist)) {
 //切换侧边栏开关
 let changeWidth = 250;
 $(".checkbox").on("click", function () {
-  if (!$("#sidebar").hasClass("clicked")) {
+  if (changeWidth === 250) {
     $(".sidebar-sub-toggle+.nav-bar").slideUp();
   }
   // 当前宽度
@@ -53,9 +52,15 @@ $(".checkbox").on("click", function () {
 });
 //切换li开关
 $(".sidebar-sub-toggle").on("click", function () {
-  $("#sidebar").removeClass("clicked");
+  changeWidth = 250;
+  document.documentElement.style.setProperty(
+    "--sidebar-width",
+    "250px"
+  );
   $(this).next().slideToggle(); // 切换显示和隐藏，带有滑动效果
 });
+
+
 $(".sidebar-for-window li").hover(
   function (event) {
     // console.log($(this));

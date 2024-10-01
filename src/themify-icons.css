@@ -42,7 +42,7 @@
 }
 
 
-/* @font-face {
+@font-face {
 	font-family: 'themify';
 	font-weight: normal;
 	font-style: normal;
@@ -51,7 +51,7 @@
 		url('icons/themify.woff?-fvbane') format('woff'),
 		url('icons/themify.ttf?-fvbane') format('truetype'),
 		url('icons/themify.svg?-fvbane#themify') format('svg');
-} */
+}
 
 [class^="ti-"],
 [class*=" ti-"] {

@@ -19,13 +19,10 @@ const rules = require("./webpack.rules"); //require是一个用来导入模块�
 //如果是一个核心模块名称（如fs-文件系统，http服务器，客户端请求，均为nodejs内置），nodejs会加载内置模块。如果是一个没有路径的模块名称，则会上node-modules里面找。
 module.exports = (env) => {
   const production = env && env.production === "true"; // 这里使用字符串比较
-  //输入env参数
-  // console.log(argv.mode);
-  // const production = argv.mode === "production";
-  // const production     = env.production;                                                  //判断是否为生产环境
-  const extern_baseURL = JSON.stringify(
-    production ? env.url_base : "http://localhost:23456/"
-  ); //如果是生产环境，则使用网址，如果不是，则使用本地地址
+            //判断是否为生产环境
+  // const extern_baseURL = JSON.stringify(
+  //   production ? env.url_base : "http://localhost:23456/"
+  // ); //如果是生产环境，则使用网址，如果不是，则使用本地地址
 
   const ret = {
     //返回一个对象，决定是生产模式或者开发模式
@@ -41,7 +38,7 @@ module.exports = (env) => {
         directory: path.join(__dirname, "public"),
       },
       compress: true,
-      port: 9000,
+      port: 12345,
     },//自动打包工具
     module: {
       rules,
@@ -61,9 +58,6 @@ module.exports = (env) => {
         $: "jquery",
         jQuery: "jquery",
       }),
-      new webpack.DefinePlugin({
-        extern_baseURL,
-      }),
       new csse({
         chunkFilename: "[id].[contenthash].css",
         filename: "[contenthash].css",
@@ -74,6 +68,7 @@ module.exports = (env) => {
       alias: {
         "@root": path.resolve(__dirname),
         "@src": path.resolve(__dirname, "src/"),
+        "@pages": path.resolve(__dirname, "src/pages/"),
         // components: path.resolve( __dirname, "src/components/" ),
         // utils     : path.resolve( __dirname, "src/utils/" ),
         // functional: path.resolve( __dirname, "src/utils/functional" ),

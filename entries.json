@@ -1,11 +1,23 @@
 {
   "entries": {
-    "home": "./src/home/home.js"
+    "home": "@pages/home/home.js",
+    "member": "@pages/member/member.js",
+    "future": "@pages/future/future.js",
+    "sidebar": "@src/sidebar/sidebar.js",
+    "textbox": "@src/textbox.js"
   },
   "pages": [
     {
       "location": "home",
-      "chunks": ["home"]
+      "chunks": ["home", "sidebar", "textbox"]
+    },
+    {
+      "location": "member",
+      "chunks": ["member", "sidebar", "textbox"]
+    },
+    {
+      "location": "future",
+      "chunks": ["future", "sidebar", "textbox"]
     }
   ]
 }

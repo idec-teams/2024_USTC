@@ -1,7 +1,0 @@
->li.sidebar-sub-toggle
-  >a
-    %href={{href=#}}
-    >span.text
-      .{{itemName=Team}}
->ul.nav-bar 
-  +list
