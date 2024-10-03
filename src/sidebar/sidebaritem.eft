@@ -1,6 +1,0 @@
->a
-  %href={{href=home.html}}
-  >li.sidebar-item.{{itemName}}
-    >i.iconfont.icon
-    >span.text
-    .{{itemName}}

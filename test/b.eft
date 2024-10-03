@@ -1,4 +1,0 @@
->ul
-  .I'm the subtotle
-  >li
-    +list

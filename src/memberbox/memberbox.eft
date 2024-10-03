@@ -1,4 +1,0 @@
->div.memberbox
-  >div.title
-    .{{title}}
-  +list
