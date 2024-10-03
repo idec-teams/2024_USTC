@@ -1,0 +1,5 @@
+>div.{{image_name}} .img
+  >img
+    #src={{src}}
+  >p
+    .{{text}}

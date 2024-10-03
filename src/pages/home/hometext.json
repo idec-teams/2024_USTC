@@ -1,0 +1,13 @@
+{
+  "Title1": [
+    {
+      "subtitle": "Abstract",
+      "text": "The synthesis yield of Sakuranetin, a substance with broad medical applications and potential, is limited by the condensation reaction catalyzed by chalcone synthase. In recent years, directed evolution has emerged as an excellent method to optimize the performance of proteins while traditional directed evolution is facing difficulties in high-throughput screening. Proper detection technologies are urgently needed. Combining with rational design and protein structure analysis, we modify chalcone synthase and naringenin sensors TtgR transcriptional repressors. This could improve the yield of the sakuranetin pathway though more efficient high-throughput screening by using these optimized biosensors. We choose Vibrio natriegens as the chassis due to its excellent growth rate and outstanding protein expression capabilities, in which we successfully build sensor engineering. Codon optimization is also employed to optimize the expression of proteins."
+    }
+  ],
+  "Title2": [
+    { "text": "world", "src": "nihc", "image_name": "world" },
+    { "text": "world", "src": "nihc", "image_name": "world" }
+  ],
+  "Title3": [{ "text": "hello" }]
+}

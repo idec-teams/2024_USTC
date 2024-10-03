@@ -1,6 +1,3 @@
-/*!****************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/nano.css ***!
-  \****************************************************************/
 .nano {
   overflow: hidden;
 }
@@ -20,9 +17,6 @@
   background: #555555;
   width     : 10px;
 }
-/*!************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/nanoscroller.css ***!
-  \************************************************************************/
 /** initial setup **/
 .nano {
   position : relative;
@@ -74,9 +68,6 @@
   opacity    : 0.99;
 }
 
-/*!***************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/sidebar/sidebar.css ***!
-  \***************************************************************************/
 :root {
   --body-color: #fff;
   --shell-color: #f5f5f5;
@@ -84,6 +75,7 @@
   --primary-color-light: #f5f5f5;
   --toggle-color: #787878;
   --text-color: #000000;
+  --sidebar-width:150px;
 }
 
 .dark {
@@ -234,5 +226,3 @@ header {
 /* li {
   display: none;
 } */
-
-/*# sourceMappingURL=9130c2d381bfbbdfeff7.css.map*/

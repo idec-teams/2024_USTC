@@ -1,9 +1,9 @@
 >nav.sidebar-for-window
   #id=sidebar
   >div.checkbox
-  >a
-    #href=home.html
-    >div.logo
+  >div.logo
+    >a
+      #href=home.html
       .USTC 2024 
   >div.search-box
   >div.nano.sidebar-contain

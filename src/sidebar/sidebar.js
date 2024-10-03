@@ -37,13 +37,13 @@ for (let [key, value] of Object.entries(sidebarlist)) {
 }
 
 //切换侧边栏开关
-let changeWidth = 250;
+let changeWidth = 150;
 $(".checkbox").on("click", function () {
-  if (changeWidth === 250) {
+  if (changeWidth === 150) {
     $(".sidebar-sub-toggle+.nav-bar").slideUp();
   }
   // 当前宽度
-  const widths = [250, 70];
+  const widths = [150, 70];
   changeWidth = changeWidth === widths[0] ? widths[1] : widths[0];
   document.documentElement.style.setProperty(
     "--sidebar-width",
@@ -52,10 +52,10 @@ $(".checkbox").on("click", function () {
 });
 //切换li开关
 $(".sidebar-sub-toggle").on("click", function () {
-  changeWidth = 250;
+  changeWidth = 150;
   document.documentElement.style.setProperty(
     "--sidebar-width",
-    "250px"
+    "150px"
   );
   $(this).next().slideToggle(); // 切换显示和隐藏，带有滑动效果
 });

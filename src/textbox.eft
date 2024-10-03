@@ -1,8 +1,0 @@
->div.container
-  >div.textbox
-    >div.text
-      * +text
-      >h1
-        .This is the title
-      >br
-      .This is the text

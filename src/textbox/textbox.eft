@@ -1,0 +1,6 @@
+>div.container
+  >div.textbox
+    >div.text
+      >h1
+        .{{title}}
+      +textlist

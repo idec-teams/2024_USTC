@@ -4,20 +4,65 @@
     "member": "@pages/member/member.js",
     "future": "@pages/future/future.js",
     "sidebar": "@src/sidebar/sidebar.js",
-    "textbox": "@src/textbox.js"
+    "textboxcss": "@src/textbox/textbox.css",
+    "test": "@root/test/test1.js"
   },
   "pages": [
     {
       "location": "home",
-      "chunks": ["home", "sidebar", "textbox"]
+      "chunks": ["home", "sidebar", "textboxcss"]
     },
     {
-      "location": "member",
-      "chunks": ["member", "sidebar", "textbox"]
+      "location": "members",
+      "chunks": ["member", "sidebar", "textboxcss"]
     },
     {
-      "location": "future",
-      "chunks": ["future", "sidebar", "textbox"]
+      "location": "attribution",
+      "chunks": ["future", "sidebar", "textboxcss"]
+    },
+    {
+      "location": "background",
+      "chunks": ["sidebar", "textboxcss"]
+    },
+    {
+      "location": "design",
+      "chunks": ["sidebar", "textboxcss"]
+    },
+    {
+      "location": "results",
+      "chunks": ["sidebar", "textboxcss"]
+    },
+    {
+      "location": "discussion",
+      "chunks": ["sidebar", "textboxcss"]
+    },
+    {
+      "location": "safety",
+      "chunks": ["sidebar", "textboxcss"]
+    },
+    {
+      "location": "notebook",
+      "chunks": ["sidebar", "textboxcss"]
+    },
+    {
+      "location": "protocols",
+      "chunks": ["sidebar", "textboxcss"]
+    },
+    {
+      "location": "report",
+      "chunks": ["sidebar", "textboxcss"]
+    },
+    {
+      "location": "supplementary-information",
+      "chunks": ["sidebar", "textboxcss"]
+    },
+    {
+      "location": "Reference",
+      "chunks": ["sidebar", "textboxcss"]
+    },
+    {
+      "location": "test",
+      "chunks": ["test"]
     }
   ]
 }

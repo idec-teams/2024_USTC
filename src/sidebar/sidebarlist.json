@@ -2,12 +2,31 @@
   "Team": {
     "link": { "href": "" },
     "item": [
-      { "itemName": "member", "href": "member.html" },
-      { "itemName": "member", "href": "member.html" }
+      { "itemName": "members", "href": "members.html" },
+      { "itemName": "attribution", "href": "attribution.html" }
     ]
   },
-  "Future": {
-    "link": { "href": "future.html" },
+  "Project": {
+    "link": { "href": "" },
+    "item": [
+      { "itemName": "background", "href": "background.html" },
+      { "itemName": "design", "href": "design.html" },
+      { "itemName": "results", "href": "results.html" },
+      { "itemName": "discussion", "href": "discussion.html" },
+      { "itemName": "safety", "href": "safety.html" }
+    ]
+  },
+  "Documentation": {
+    "link": { "href": "" },
+    "item": [
+      { "itemName": "notebook", "href": "notebook.html" },
+      { "itemName": "protocols", "href": "protocols.html" },
+      { "itemName": "report", "href": "report.html" },
+      { "itemName": "supplementary information", "href": "supplementary-information.html" }
+    ]
+  },
+  "Reference": {
+    "link": { "href": "Reference.html" },
     "item": []
   }
 }
