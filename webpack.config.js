@@ -30,12 +30,12 @@ module.exports = (env) => {
     entry: entries, //项目的入口文件，从entries中获取
     output: {
       filename: production ? "[name].[contenthash].js" : "[name].js", //输出文件名
-      path: path.resolve(__dirname, "public"), //输出地址
+      path: path.resolve(__dirname, "docs"), //输出地址
       clean: true, //是否清理输出目录
     },
     devServer: {
       static: {
-        directory: path.join(__dirname, "public"),
+        directory: path.join(__dirname, "docs"),
       },
       compress: true,
       port: 12345,
@@ -50,7 +50,7 @@ module.exports = (env) => {
           new HtmlWebpackPlugin({
             //使用map（）遍历数组，返回的还是一个数组，数组里面是一个实例化的对象，之后展开
             template: path.resolve(__dirname, "src/index.html"),
-            filename: path.resolve(__dirname, `public/${page.location}.html`),
+            filename: path.resolve(__dirname, `docs/${page.location}.html`),
             chunks: page.chunks,
           })
       ),
