@@ -1,8 +1,0 @@
->div.member-container
-  >div.member-photo-container
-    >img.member-photo
-      #src={{src}}
-  >div.member-name
-    .{{name}}
-  >div.introduction
-    .{{introduction}}

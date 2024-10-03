@@ -1,9 +1,0 @@
->a
-  %href={{href}}
-  >li.sidebar-sub-toggle.{{itemName}}
-    >i.{{itemName}}icon
-    >span.text
-      .{{itemName=Team}}
-    >i.sidebar-sub-icon.{{href}}
-  >ul.nav-bar 
-    +list
