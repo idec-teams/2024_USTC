@@ -1,0 +1,22 @@
+>nav.sidebar-for-window
+  #id=sidebar
+  >div.checkbox
+  >div.logo
+    >a
+      #href=home.html
+      .USTC 2024 
+  >div.search-box
+  >div.nano.sidebar-contain
+    >div.nano-content.sidebar-itembox    
+      >ul
+  >div.bottom-contain
+    >li.mode
+      >div.sun-moon
+        >i.iconfont.icon.icon-rijian.sun
+        >i.iconfont.icon.icon-yejian.moon
+      >span.mode-text.text
+        .白天模式
+      >div.toggle-switch
+        >span.switch
+  >div.nano-pane
+    >div.nano-slider

@@ -1,0 +1,6 @@
+>br
+>h2.{{subtitle}}
+  .{{subtitle}}
+>br
+>p
+  .{{text}}
