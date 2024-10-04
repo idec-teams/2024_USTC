@@ -1,0 +1,7 @@
+>h2
+  #id={{subtitle}}
+  .{{subtitle}}
+>br
+>pre
+  .{{text}}
+>br

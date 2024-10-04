@@ -1,4 +1,5 @@
->div.{{image_name}} .img
+>div.img
+  #id={{image_name}}
   >img
     #src={{src}}
   >p

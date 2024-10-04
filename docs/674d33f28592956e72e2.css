@@ -87,12 +87,6 @@
   --text-color: #333;
 }
 
-ul,
-li {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
 
 a {
   text-decoration: none;
@@ -101,7 +95,7 @@ a {
 
 .sidebar-for-window {
   /* flex:0 1 200px; */
-  position: absolute;
+  position: fixed;
   display: flex;
   top: 0;
   left: 0;
@@ -124,6 +118,9 @@ a {
   text-align: center;
   line-height: 50px;
   margin: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 

@@ -1,6 +1,9 @@
 import Textbox from "@src/textbox/textbox.eft";
-import p from "@src/textbox/p.eft";
+import ol from "@src/textbox/ol.eft";
+import li from "@src/textbox/li.eft";
+import pre from "@src/textbox/pre.eft";
 import img from "@src/textbox/img.eft";
+
 // import textlist from "@pages/home/hometext.json";
 // import "@src/textbox/textbox.css";
 
@@ -33,13 +36,18 @@ import img from "@src/textbox/img.eft";
 // }
 function textboxcreate(textlist) {
   for (let [key, value] of Object.entries(textlist)) {
-    const textbox = new Textbox({ $data: { title: key } });
+    const textbox = new Textbox({ $data: { title: "" + key } });
     value.forEach((element) => {
-      if (element.src === undefined) {
+      const image = element.src !== undefined;
+      const orderedlist = !image && element.ollist !== undefined;
+      const preformattedtext = !image && !orderedlist;
+      console.log(orderedlist);
+      
+      if (preformattedtext) {
         textbox.textlist.push(
-          new p({ $data: { text: element.text, subtitle: element.subtitle } })
+          new pre({ $data: { text: element.text, subtitle: element.subtitle } })
         );
-      } else {
+      } else if (image) {
         textbox.textlist.push(
           new img({
             $data: {
@@ -49,6 +57,14 @@ function textboxcreate(textlist) {
             },
           })
         );
+      } else if (orderedlist) {
+        const ollist = new ol(); 
+        element.ollist.forEach((lielement) => {
+          ollist.ollist.push(
+            new li({ $data: { text: lielement.text } })
+          );
+        })
+        textbox.textlist.push(ollist);
       }
     });
     textbox.$mount({

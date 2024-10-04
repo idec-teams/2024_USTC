@@ -3,7 +3,7 @@
   >div.checkbox
   >div.logo
     >a
-      #href=home.html
+      #href=index.html
       .USTC 2024 
   >div.search-box
   >div.nano.sidebar-contain
