@@ -1,11 +1,12 @@
-.container{
+.textbox-container{
   margin-right: 200px !important;
 }
 .table-container{
+  transition: all .3s ease;
   width: 160px;
   background-color: aliceblue;
   display: inline-block;
-  position: absolute;
+  position: fixed;
   top:20vh;
   right: 20px;
 }

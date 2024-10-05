@@ -1,4 +1,7 @@
+#test2 {
+  width: 100%;
+  height: 700px;
+  /* 根据需求设置高度 */
+  border: 1px solid #ddd;
 
-
-
-
+}

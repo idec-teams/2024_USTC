@@ -7,6 +7,8 @@ path.basename():返回文件的文件名部分path.basename('folder/file.txt');
 path.dirname():返回文件的目录名部分
 path.extname():返回文件的拓展名。
  */
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin"); //webpack插件，用来生成html文件
 const webpack = require("webpack"); //webpack核心库
@@ -19,7 +21,7 @@ const rules = require("./webpack.rules"); //require是一个用来导入模块�
 //如果是一个核心模块名称（如fs-文件系统，http服务器，客户端请求，均为nodejs内置），nodejs会加载内置模块。如果是一个没有路径的模块名称，则会上node-modules里面找。
 module.exports = (env) => {
   const production = env && env.production === "true"; // 这里使用字符串比较
-            //判断是否为生产环境
+  //判断是否为生产环境
   // const extern_baseURL = JSON.stringify(
   //   production ? env.url_base : "http://localhost:23456/"
   // ); //如果是生产环境，则使用网址，如果不是，则使用本地地址
@@ -39,7 +41,7 @@ module.exports = (env) => {
       },
       compress: true,
       port: 12345,
-    },//自动打包工具
+    }, //自动打包工具
     module: {
       rules,
     },
@@ -54,6 +56,18 @@ module.exports = (env) => {
             chunks: page.chunks,
           })
       ),
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: path.resolve(__dirname, "src/pdfjs-dist/web"), // 复制 web 文件夹（包含 viewer.html）
+            to: path.resolve(__dirname, "docs/pdfjs/web"), // 复制到 docs/pdfjs/web
+          },
+          {
+            from: path.resolve(__dirname, "src/pdfjs-dist/build"), // 复制 build 文件夹
+            to: path.resolve(__dirname, "docs/pdfjs/build"), // 复制到 docs/pdfjs/build
+          },
+        ],
+      }),
       new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery",
@@ -73,6 +87,7 @@ module.exports = (env) => {
         // utils     : path.resolve( __dirname, "src/utils/" ),
         // functional: path.resolve( __dirname, "src/utils/functional" ),
         // fetch     : path.resolve( __dirname, "src/utils/fetch" ),
+        "@pdfjs-dist": path.resolve(__dirname, "node_modules/pdfjs-dist/"), // 或者使用 pdf.worker.js，看哪个存在
       },
       extensions: [".efml", ".json", ".js", ".eft"], //在查找路径的时候，先检索efml文件，在检索js文件，后检索eft文件，所以使用ef。js的时候尽量用eft
       roots: [path.resolve(__dirname, "src")],

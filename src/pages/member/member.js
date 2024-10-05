@@ -1,1 +1,1 @@
-import "@src/memberbox/memberbox.js/"
+import "@src/memberbox/memberbox.js";

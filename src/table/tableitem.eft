@@ -1,4 +1,4 @@
->div.title-text.{{dif}}
+>div.tible-title.{{dif}}
   @click=scroll
   @hover=hover
   .{{title}}

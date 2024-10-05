@@ -1,13 +1,17 @@
+.textbox-container {
+  transition: all .3s ease;
+  margin-right: 20px;
+  margin-left: calc(var(--sidebar-width) + 20px);
+  min-width: 200px;
+
+}
+
 .container {
   display: block;
-  transition: all .3s ease;
   /* flex: 1; */
   margin-top: 20px;
-  margin-right: 20px;
   margin-bottom: 20px;
-  margin-left: calc(var(--sidebar-width) + 20px);
   align-items: center;
-  min-width: 200px;
 }
 
 .textbox {
@@ -17,6 +21,11 @@
   border-radius: 5px;
   box-shadow: 0px 0px 4px 0px #000;
   display: grid;
+}
+
+.text>ol,
+.text>ul {
+  list-style-position: inside;
 }
 
 .img {
@@ -31,10 +40,8 @@
   white-space: normal;
 }
 
-ol {
-  list-style-position: inside;
-}
-.img>img{
+
+.img>img {
   height: 100px;
   width: 100px;
 

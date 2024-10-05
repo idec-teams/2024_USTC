@@ -1,5 +1,7 @@
-.memberbox {
+.container {
   /* text-align: right; */
+  margin:100px;
+  margin-left:200px;
 }
 
 .title {
@@ -8,8 +10,10 @@
 }
 
 .member-container {
+  position: relative;
   display: inline-block;
   text-align: center;
+  transition: all 1s ease;
 }
 
 .member-photo-container {
@@ -19,7 +23,6 @@
   border-radius: 50%;
   border: 5px solid #f5f5f5;
   overflow: hidden;
-  transition: all 1s ease;
 }
 
 .member-photo {
@@ -37,7 +40,6 @@
 
 .expanded {
   transition: all 1s linear;
-  position: absolute;
   /* justify-content: center;
   align-items: center; */
   /* left: calc((100vw - var(--sidebar-width))/2);

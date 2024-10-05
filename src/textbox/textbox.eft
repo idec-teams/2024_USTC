@@ -1,8 +1,4 @@
 >div.container
   >div.textbox
     >div.text
-      >h1
-        #id={{title}}
-        .{{title}}
-      >br
       +textlist
