@@ -27,6 +27,7 @@ module.exports = (env) => {
   // ); //如果是生产环境，则使用网址，如果不是，则使用本地地址
 
   const ret = {
+    bail: true,
     //返回一个对象，决定是生产模式或者开发模式
     mode: production ? "production" : "development",
     entry: entries, //项目的入口文件，从entries中获取
@@ -83,24 +84,23 @@ module.exports = (env) => {
         "@root": path.resolve(__dirname),
         "@src": path.resolve(__dirname, "src/"),
         "@pages": path.resolve(__dirname, "src/pages/"),
-        // components: path.resolve( __dirname, "src/components/" ),
-        // utils     : path.resolve( __dirname, "src/utils/" ),
-        // functional: path.resolve( __dirname, "src/utils/functional" ),
-        // fetch     : path.resolve( __dirname, "src/utils/fetch" ),
-        "@pdfjs-dist": path.resolve(__dirname, "node_modules/pdfjs-dist/"), // 或者使用 pdf.worker.js，看哪个存在
       },
-      extensions: [".efml", ".json", ".js", ".eft"], //在查找路径的时候，先检索efml文件，在检索js文件，后检索eft文件，所以使用ef。js的时候尽量用eft
+      extensions: [".efml", ".json", ".js", ".eft"],
       roots: [path.resolve(__dirname, "src")],
     },
     optimization: {
       chunkIds: "named",
       usedExports: true,
-      // minimize: true,//压缩代码
-      // minimizer: [
-      //   new TerserPlugin({
-      //     extractComments: false,
-      //   }),
-      // ],
+      minimize: production, // 仅在生产环境中压缩代码
+      minimizer: [
+        new TerserPlugin({
+          extractComments: false,
+        }),
+      ],
+      splitChunks: {
+        chunks: "all",
+      },
+      runtimeChunk: "single",
     },
   };
 

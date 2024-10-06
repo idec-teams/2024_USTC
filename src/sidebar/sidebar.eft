@@ -1,6 +1,9 @@
 >nav.sidebar-for-window
   #id=sidebar
   >div.checkbox
+    >svg.angle-down.svg
+      >path
+        #fill=#ffffff
   >div.logo
     >a
       #href=index.html

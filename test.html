@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>滚动条和文字效果</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      height: 2000px; /* 设置页面高度以便演示滚动 */
+      background-color: #222; /* 深色背景 */
+      color: #fff;
+      position: relative;
+    }
+
+    .scroll-message {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      opacity: 1; /* 初始状态为可见 */
+      letter-spacing: 0px; /* 初始字母间距 */
+      filter: blur(0px); /* 初始无模糊 */
+      transition: opacity 0.5s ease, letter-spacing 0.5s ease, filter 0.5s ease; /* 过渡效果 */
+    }
+
+    .blur-fade-out {
+      animation: blur-fade-out 2s ease-out forwards; /* 启用模糊消失动画 */
+    }
+
+    .clear-fade-in {
+      animation: clear-fade-in 1s ease forwards; /* 启用清晰恢复动画 */
+    }
+
+    @keyframes blur-fade-out {
+      0% {
+        opacity: 1;
+        letter-spacing: 0px;
+        filter: blur(0px);
+      }
+      100% {
+        opacity: 0;
+        letter-spacing: 30px;
+        filter: blur(5px); /* 增加模糊 */
+      }
+    }
+
+    @keyframes clear-fade-in {
+      0% {
+        opacity: 0;
+        letter-spacing: 30px;
+        filter: blur(5px); /* 初始为模糊状态 */
+      }
+      100% {
+        opacity: 1;
+        letter-spacing: 0px;
+        filter: blur(0px); /* 恢复到清晰状态 */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-message">滚动条不在顶部时的文字</div>
+
+  <script>
+    $(document).ready(function () {
+      // 页面初始状态，检查滚动条是否在顶部并设置文字样式
+      if ($(window).scrollTop() === 0) {
+        $('.scroll-message').removeClass('blur-fade-out').addClass('clear-fade-in');
+      } else {
+        $('.scroll-message').removeClass('clear-fade-in').addClass('blur-fade-out');
+      }
+
+      // 监听滚动事件
+      $(window).on('scroll', function () {
+        if ($(window).scrollTop() === 0) {
+          // 滚动条在顶部时，文字变为清晰状态
+          $('.scroll-message').removeClass('blur-fade-out')
+            .addClass('clear-fade-in'); // 添加清晰恢复动画
+        } else {
+          // 开始滚动，启动模糊消失动画
+          $('.scroll-message').removeClass('clear-fade-in')
+            .addClass('blur-fade-out'); // 添加模糊消失动画
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -4,60 +4,61 @@
     "member": "@pages/member/member.js",
     "future": "@pages/future/future.js",
     "sidebar": "@src/sidebar/sidebar.js",
-    "textboxcss": "@src/textbox/textbox.css"
+    "textboxcss": "@src/textbox/textbox.css",
+    "cursor-effects" : "@src/effect/cursor-effects.js"
   },
   "pages": [
     {
       "location": "index",
-      "chunks": ["index", "sidebar", "textboxcss"]
+      "chunks": ["index", "sidebar", "textboxcss","cursor-effects"]
     },
     {
       "location": "members",
-      "chunks": ["member", "sidebar", "textboxcss"]
+      "chunks": ["member", "sidebar", "textboxcss","cursor-effects"]
     },
     {
       "location": "attribution",
-      "chunks": ["future", "sidebar", "textboxcss"]
+      "chunks": ["future", "sidebar", "textboxcss","cursor-effects"]
     },
     {
       "location": "background",
-      "chunks": ["sidebar", "textboxcss"]
+      "chunks": ["sidebar", "textboxcss","cursor-effects"]
     },
     {
       "location": "design",
-      "chunks": ["sidebar", "textboxcss"]
+      "chunks": ["sidebar", "textboxcss","cursor-effects"]
     },
     {
       "location": "results",
-      "chunks": ["sidebar", "textboxcss"]
+      "chunks": ["sidebar", "textboxcss","cursor-effects"]
     },
     {
       "location": "discussion",
-      "chunks": ["sidebar", "textboxcss"]
+      "chunks": ["sidebar", "textboxcss","cursor-effects"]
     },
     {
       "location": "safety",
-      "chunks": ["sidebar", "textboxcss"]
+      "chunks": ["sidebar", "textboxcss","cursor-effects"]
     },
     {
       "location": "notebook",
-      "chunks": ["sidebar", "textboxcss"]
+      "chunks": ["sidebar", "textboxcss","cursor-effects"]
     },
     {
       "location": "protocols",
-      "chunks": ["sidebar", "textboxcss"]
+      "chunks": ["sidebar", "textboxcss","cursor-effects"]
     },
     {
       "location": "report",
-      "chunks": ["sidebar", "textboxcss"]
+      "chunks": ["sidebar", "textboxcss","cursor-effects"]
     },
     {
       "location": "supplementary-information",
-      "chunks": ["sidebar", "textboxcss"]
+      "chunks": ["sidebar", "textboxcss","cursor-effects"]
     },
     {
       "location": "Reference",
-      "chunks": ["sidebar", "textboxcss"]
+      "chunks": ["sidebar", "textboxcss","cursor-effects"]
     }
   ]
 }

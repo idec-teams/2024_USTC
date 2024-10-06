@@ -75,7 +75,7 @@
   --primary-color-light: #f5f5f5;
   --toggle-color: #787878;
   --text-color: #000000;
-  --sidebar-width:150px;
+  --sidebar-width: 180px;
 }
 
 .dark {
@@ -104,8 +104,16 @@ a {
   /* padding: 10px 14px; */
   background: var(--shell-color);
   transition: all .3s ease;
-  z-index: 100;
+  z-index: 999;
   flex-direction: column;
+  user-select: none;
+  /* 禁止文字选中 */
+  -webkit-user-select: none;
+  /* 针对 Webkit 浏览器 (如 Chrome, Safari) */
+  -moz-user-select: none;
+  /* 针对 Firefox */
+  -ms-user-select: none;
+  /* 针对 Internet Explorer */
 }
 
 /* .sidebar-for-window li:hover {
@@ -162,6 +170,23 @@ a {
 .search-box {
   height: auto;
   width: 100%;
+}
+
+.angle-down {
+  height: 8px;
+  width: 13px;
+  margin: 0 5px;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-sub-toggle {
+  position: relative;
+}
+
+.sidebar-sub-toggle .angle-down {
+  position: absolute;
+  top: 50%;
 }
 
 .sidebar-itembox {

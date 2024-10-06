@@ -2,3 +2,4 @@
   >div.title
     .{{title}}
   +list
+>div.overlay
