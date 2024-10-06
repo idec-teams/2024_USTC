@@ -1,16 +1,26 @@
 {
   "entries": {
-    "index": "@pages/index/index.js",
-    "member": "@pages/member/member.js",
-    "future": "@pages/future/future.js",
+    "cursor-effects": "@src/effect/cursor-effects.js",
     "sidebar": "@src/sidebar/sidebar.js",
     "textboxcss": "@src/textbox/textbox.css",
-    "cursor-effects" : "@src/effect/cursor-effects.js"
+    "index": "@pages/index/index.js",
+    "member": "@pages/member/member.js",
+    "attribution": "@pages/attribution/attribution.js",
+    "background": "@pages/background/background.js",
+    "design": "@pages/design/design.js",
+    "results": "@pages/results/results.js",
+    "discussion": "@pages/discussion/discussion.js",
+    "safety": "@pages/safety/safety.js",
+    "notebook": "@pages/notebook/notebook.js",
+    "protocols": "@pages/protocols/protocols.js",
+    "report": "@pages/report/report.js",
+    "supplementary-information": "@pages/supplementary-information/supplementary-information.js",
+    "Reference": "@pages/Reference/Reference.js"
   },
   "pages": [
     {
       "location": "index",
-      "chunks": ["index", "sidebar", "textboxcss","cursor-effects"]
+      "chunks": ["index", "sidebar", "textboxcss", "cursor-effects"]
     },
     {
       "location": "members",
@@ -18,47 +28,47 @@
     },
     {
       "location": "attribution",
-      "chunks": ["future", "sidebar", "textboxcss","cursor-effects"]
+      "chunks": ["attribution", "sidebar", "textboxcss", "cursor-effects"]
     },
     {
       "location": "background",
-      "chunks": ["sidebar", "textboxcss","cursor-effects"]
+      "chunks": ["background","sidebar", "textboxcss", "cursor-effects"]
     },
     {
       "location": "design",
-      "chunks": ["sidebar", "textboxcss","cursor-effects"]
+      "chunks": ["design","sidebar", "textboxcss", "cursor-effects"]
     },
     {
       "location": "results",
-      "chunks": ["sidebar", "textboxcss","cursor-effects"]
+      "chunks": ["results","sidebar", "textboxcss", "cursor-effects"]
     },
     {
       "location": "discussion",
-      "chunks": ["sidebar", "textboxcss","cursor-effects"]
+      "chunks": ["discussion","sidebar", "textboxcss", "cursor-effects"]
     },
     {
       "location": "safety",
-      "chunks": ["sidebar", "textboxcss","cursor-effects"]
+      "chunks": ["safety","sidebar", "textboxcss", "cursor-effects"]
     },
     {
       "location": "notebook",
-      "chunks": ["sidebar", "textboxcss","cursor-effects"]
+      "chunks": ["notebook","sidebar", "textboxcss", "cursor-effects"]
     },
     {
       "location": "protocols",
-      "chunks": ["sidebar", "textboxcss","cursor-effects"]
+      "chunks": ["protocols","sidebar", "textboxcss", "cursor-effects"]
     },
     {
       "location": "report",
-      "chunks": ["sidebar", "textboxcss","cursor-effects"]
+      "chunks": ["report","sidebar", "textboxcss", "cursor-effects"]
     },
     {
       "location": "supplementary-information",
-      "chunks": ["sidebar", "textboxcss","cursor-effects"]
+      "chunks": ["supplementary-information","sidebar", "textboxcss", "cursor-effects"]
     },
     {
       "location": "Reference",
-      "chunks": ["sidebar", "textboxcss","cursor-effects"]
+      "chunks": ["Reference","sidebar", "textboxcss", "cursor-effects"]
     }
   ]
 }

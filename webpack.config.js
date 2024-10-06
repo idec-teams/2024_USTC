@@ -84,6 +84,8 @@ module.exports = (env) => {
         "@root": path.resolve(__dirname),
         "@src": path.resolve(__dirname, "src/"),
         "@pages": path.resolve(__dirname, "src/pages/"),
+        "@member": path.resolve(__dirname, "src/image/member/"),
+        "@figure": path.resolve(__dirname, "src/image/figure/"),
       },
       extensions: [".efml", ".json", ".js", ".eft"],
       roots: [path.resolve(__dirname, "src")],

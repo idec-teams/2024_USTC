@@ -13,6 +13,8 @@ import "@src/memberbox/memberbox.css";
 // }
 // new memberBoxCreate().$mount({ target: document.body });
 new textbox().$mount({ target: document.body });
+console.log(1111);
+
 for (let [key, value] of Object.entries(memberlist)) {
   // console.log(document.querySelector("div.container"));
 
@@ -96,15 +98,18 @@ $(".member-container .member-photo-container").on("click", function (e) {
     const top = $parent.offset().top;
     const left = $parent.offset().left;
 
-    // 计算父元素居中的偏移量
-    const topPosition =
-      ($(window).height() / 2 - top) / 2 - ($parent.outerHeight() / 3) * 2;
-    const leftPosition =
-      ($(window).width() / 2 -
-        left) /
-      2;
+    // 获取视口的高度和宽度
+    const viewportHeight = $(window).height();
+    const viewportWidth = $(window).width();
 
-    // 放大并移动父元素到中心位置
+    // 获取页面滚动位置
+    const scrollTop = $(window).scrollTop();
+
+    // 计算元素居中视口的位置（考虑滚动条位置）
+    const topPosition =(scrollTop + viewportHeight / 2 - top - $parent.outerHeight()*2)/2;
+    const leftPosition = (viewportWidth / 2 - left) / 2;
+
+    // 放大并移动父元素到视口中央位置
     $parent.css({
       transform: `scale(2) translate(${leftPosition}px, ${topPosition}px)`,
       "z-index": 30, // 设置 z-index 为较小的值

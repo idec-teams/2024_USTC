@@ -1,6 +1,7 @@
 >div.member-container
   >div.member-photo-container
     >img.member-photo
+      #id={{name}}
       #src={{src}}
   >div.member-name
     .{{name}}
