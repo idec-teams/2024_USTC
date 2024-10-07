@@ -4,7 +4,7 @@
     >i.{{itemName}}icon
     >span.text
       .{{itemName=Team}}
-    >svg.angle-down.svg
+    >svg.angle-down.{{display}}
       >path
   >ul.nav-bar 
     +list

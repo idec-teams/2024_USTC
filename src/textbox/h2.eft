@@ -1,4 +1,5 @@
 >h2
-  #id={{subtitle}}
+  #id={{id}}
   .{{subtitle}}
+  +list
 >br

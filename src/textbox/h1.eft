@@ -1,4 +1,4 @@
 >h1
-  #id={{title}}
+  #id={{id}}
   .{{title}}
->br
+  +list

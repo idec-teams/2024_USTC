@@ -106,12 +106,12 @@ $(".member-container .member-photo-container").on("click", function (e) {
     const scrollTop = $(window).scrollTop();
 
     // 计算元素居中视口的位置（考虑滚动条位置）
-    const topPosition =(scrollTop + viewportHeight / 2 - top - $parent.outerHeight()*2)/2;
+    const topPosition =(scrollTop + viewportHeight / 2 - top - $parent.outerHeight()*1.5)/2;
     const leftPosition = (viewportWidth / 2 - left) / 2;
 
     // 放大并移动父元素到视口中央位置
     $parent.css({
-      transform: `scale(2) translate(${leftPosition}px, ${topPosition}px)`,
+      transform: `scale(1.8) translate(${leftPosition}px, ${topPosition}px)`,
       "z-index": 30, // 设置 z-index 为较小的值
     });
 
@@ -142,16 +142,16 @@ $(document).on("click", function () {
 
     $introduction.removeClass("show").addClass("hide"); // 切换为隐藏状态的动画
     setTimeout(() => {
-      $introduction.removeClass("hide"); // 重置状态，确保后续能正常显示
-    }, 600); // 在动画完成后（600ms）重置状态
+      $introduction.removeClass("hide"); // 重置状态，确保后续正常显示
+    }, 600);
 
     // 隐藏遮罩层
     $overlay.removeClass("show");
-    $clickedElement = null; // 重置点击状态
+    $clickedElement = null;
   }
 });
 
-// 为 .introduction 添加点击事件，防止缩小和消失
+//防止.introduction缩小和消失
 $(".member-container .introduction").on("click", function (e) {
-  e.stopPropagation(); // 阻止事件冒泡
+  e.stopPropagation();
 });

@@ -42,7 +42,19 @@ const text = {
       text: "Figure 4. (A) The principles of the TtgR repressor; (B) The structure of pACYC177-TtgR-GFP ",
     },
     {
-      text: "For the high-throughput screening of directed evolution, we constructed multiple plasmids with different strengths of constitutive promoters controlling TtgR Repressor to obtain biosensors with appropriate sensitivity and more suitable for directed evolution. Meanwhile, to ensure that the system can work properly in V. natriegens, we constructed plasmid versions of two different TtgR repressor operons. As mentioned in Xiong's article, the wild-type-derived TtgABC operon part could not successfully initiate the expression of red fluorescent protein (RFP) in E. coli(引文7). Based on the common promoter sequence of E. coli, a T/A mutation was introduced at the tenth base site of this operon to obtain the TtgABC2 sequence, which is proven to successfully initiate downstream gene expression. We detect the fluorescence intensity by enzyme-labeled instrument, and monitor the cellular OD600 at the same time. Finally, we homogenize the data by fluorescence intensity/cell density, so as to evaluate the correspondence between different inducer concentrations and fluorescence intensity.",
+      text: [
+        {
+          text: "For the high-throughput screening of directed evolution, we constructed multiple plasmids with different strengths of constitutive promoters controlling TtgR Repressor to obtain biosensors with appropriate sensitivity and more suitable for directed evolution. Meanwhile, to ensure that the system can work properly in V. natriegens, we constructed plasmid versions of two different TtgR repressor operons. As mentioned in Xiong's article, the wild-type-derived TtgABC operon part could not successfully initiate the expression of red fluorescent protein (RFP) in ",
+        },
+        { em: "E. coli" },
+        { citation: { text: "7", href: "./Reference.html?citation=7" } },
+        ,
+        { text: ". Based on the common promoter sequence of " },
+        { em: "E. coli" },
+        {
+          text: ", a T/A mutation was introduced at the tenth base site of this operon to obtain the TtgABC2 sequence, which is proven to successfully initiate downstream gene expression. We detect the fluorescence intensity by enzyme-labeled instrument, and monitor the cellular OD600 at the same time. Finally, we homogenize the data by fluorescence intensity/cell density, so as to evaluate the correspondence between different inducer concentrations and fluorescence intensity.",
+        },
+      ],
     },
     {
       text: "Moreover, we combined protein structure analysis, simulation, and molecular docking, trying to shorten the directed evolutionary pathway by changing the detection substrate to naringenin chalcone, introducing single mutations for more application possibilities. We performed molecular docking simulations of TtgR and naringenin chalcone, and then selected the optimal docking possibilities by comparing the fractions of the combined binding energies. The white numbers represent binding energy, and we chose the models with the highest score. The crucial sites are D172, E78, S77 and C137, which are partly different from the crucial sites in the binding mode of phloretin to TtgR. Experimental validation of whether TtgR can detect naringenin chalcone is in progress. ",

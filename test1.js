@@ -1,0 +1,1 @@
+const { renderToString } = require( "katex" );

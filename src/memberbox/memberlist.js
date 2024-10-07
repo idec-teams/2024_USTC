@@ -12,24 +12,29 @@ import _XuBao from "@member/XuBao.jpg";
 import _YihengFan from "@member/YihengFan.jpg";
 import _YilingMa from "@member/YilingMa.jpg";
 import _ZehuiYu from "@member/ZehuiYu.jpg";
+import _JiongHong from "@member/JiongHong.jpg";
+import _QianZhang from "@member/QianZhang.jpg";
+import _FengyuanYang from "@member/FengyuanYang.jpeg";
+import _YangzhiWang from "@member/YangzhiWang.jpg";
+import _ZichongXu from "@member/ZichongXu.jpg";
 
 const memberlist = {
   PI: [
     {
       name: "Jiong Hong",
-      src: "",
+      src: _JiongHong,
       introduction: "hello",
     },
     {
       name: "Qian Zhang",
-      src: "",
+      src: _QianZhang,
       introduction: "hello",
     },
   ],
   Advisor: [
     {
       name: "Fengyuan Yang",
-      src: "",
+      src: _FengyuanYang,
       introduction: "hello",
     },
     {
@@ -116,7 +121,7 @@ const memberlist = {
     },
     {
       name: "Yangzhi Wang",
-      src: "",
+      src: _YangzhiWang,
       introduction: "hello",
     },
     {
@@ -129,6 +134,12 @@ const memberlist = {
       src: _YilingMa,
       introduction:
         "I'm Ma Yiling from USTC. I participated in all stages of our experiment this year. And the background part of our report was written by me.\nFor myself, iDEC is a perfect experience to learn knowledge in practice. And it arouses my enthusiasm about biology.\nIn daily life, I like reading, writing, drawing and travelling. I also love Chinese traditional culture, such as poetry.",
+    },
+    {
+      name: "Zichong Xu",
+      src: _ZichongXu,
+      introduction:
+        "Hi,I'm Zichong Xu,an ordinary student in USTC. As a member of our IDEC team, I have had the privilege of contributing to the development of our wiki, using engaging page interactions to showcase our results. I am excited to present our work and learn from all of you at this year's competition.",
     },
   ],
 };

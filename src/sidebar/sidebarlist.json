@@ -1,13 +1,11 @@
 {
   "Team": {
-    "link": { "href": "" },
     "item": [
       { "itemName": "members", "href": "members.html" },
       { "itemName": "attribution", "href": "attribution.html" }
     ]
   },
   "Project": {
-    "link": { "href": "" },
     "item": [
       { "itemName": "background", "href": "background.html" },
       { "itemName": "design", "href": "design.html" },
@@ -17,7 +15,6 @@
     ]
   },
   "Documentation": {
-    "link": { "href": "" },
     "item": [
       { "itemName": "notebook", "href": "notebook.html" },
       { "itemName": "protocols", "href": "protocols.html" },

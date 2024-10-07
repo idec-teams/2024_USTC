@@ -1,29 +1,10 @@
-:root {
-  --body-color: #fff;
-  --shell-color: #f5f5f5;
-  --primary-color: #f5f5f5;
-  --primary-color-light: #f5f5f5;
-  --toggle-color: #787878;
-  --text-color: #000000;
-  --sidebar-width: 180px;
-}
-
-.dark {
-  --body-color: #333;
-  --shell-color: #333;
-  --primary-color: #333;
-  --primary-color-light: #333;
-  --toggle-color: #333;
-  --text-color: #333;
-}
-
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
 .sidebar-for-window {
+  color: rgb(190, 198, 198);
   /* flex:0 1 200px; */
   position: fixed;
   display: flex;
@@ -32,7 +13,7 @@ a {
   width: var(--sidebar-width);
   height: 100vh;
   /* padding: 10px 14px; */
-  background: var(--shell-color);
+  background: var(--sidebar-background-color);
   transition: all .3s ease;
   z-index: 999;
   flex-direction: column;
@@ -46,15 +27,11 @@ a {
   /* 针对 Internet Explorer */
 }
 
-/* .sidebar-for-window li:hover {
-  background-color: var(--toggle-color);
-} */
-
 
 .sidebar-for-window li {
   width: 100%;
   text-align: center;
-  line-height: 50px;
+  line-height: 60px;
   margin: 0;
   display: block;
   margin: 0;
@@ -71,7 +48,7 @@ a {
   height: 30px;
   border-radius: 20px;
   box-shadow: 0px 0px 4px 0px #000;
-  background-color: var(--text-color);
+  background: var(--checkbox-color);
   color: var(--font-color-mi);
   display: flex;
   justify-content: center;
@@ -94,6 +71,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
+  /* font-size: 24px; */
   /* flex-direction: column; */
 }
 
@@ -108,12 +87,18 @@ a {
   margin: 0 5px;
   transform-origin: center;
   transition: transform 0.3s ease;
+  color: white;
 }
 
 .sidebar-sub-toggle {
+  font-size: 18px;
   position: relative;
+  background: var(--sidebar-color);
 }
-
+.sidebar-item{
+  font-size: 18px;
+  background: var(--sidebar-item-color);
+}
 .sidebar-sub-toggle .angle-down {
   position: absolute;
   top: 50%;
@@ -159,7 +144,6 @@ a {
 
 .text,
 .icon {
-  color: var(--text-color);
   transition: all .3s ease;
 }
 
@@ -177,3 +161,45 @@ header {
 /* li {
   display: none;
 } */
+.none {
+  display: none!important;
+}
+
+.sidebar-item-important {
+  background: var(--sidebar-item-color-light) !important;
+  border-left:4px solid rgb(46, 164, 191)!important;
+  color: white !important;
+}
+
+.sidebar-sub-toggle-important {
+  background: var(--sidebar-color-light) !important;
+  border-left:4px solid rgb(46, 164, 191)!important;
+  color: white !important;
+}
+.sidebar-sub-toggle-clicked {
+  background: var(--sidebar-color-light) !important;
+  color: white !important;
+}
+
+.github {
+  height: 40px;
+  width: 40px;
+}
+
+.bottom-contain a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.bottom-contain a:hover {
+  opacity: .6;
+}
+
+.githubtext {
+  font-size: 20px;
+  font-weight: 750;
+  color: #f5f5f5;
+}

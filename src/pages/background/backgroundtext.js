@@ -8,8 +8,39 @@ const text = {
   ],
   text2: [
     {
-      subtitle: "Vibrio natriegens",
-      text: "V. natriegens is a Gram-negative marine bacterium with a fast growth rate of 15.61 ± 0.18 min in the logarithmic phase, compared with 27.23 ± 0.69 min for E. coli cells. Compared with common chassis organisms such as yeast and E. coli, V. natriegens has a faster growth rate, a broader substrate spectrum, superior substrate uptake and an abundant number of ribosomes in the cell, which contributes to its excellent exogenous protein expression ability, so V. natriegens is a new type of chassis cell that has been developed in the field of biotechnology and synthetic biology in recent years. Based on its excellent biological properties, a variety of natural products and proteins, such as L-DOPA（引文1）, melanin（引文2）, c-type cytochromes（引文3） and other substances, have been efficiently biosynthesized in V. natriegens. Moreover, Vibrio exhibits robust applicability to commonly used synthetic biology parts. The synthetic biology tools for the V. natriegens are maturing, which shows further promises. ",
+      subtitle: [{ em: "Vibrio natriegens" }],
+      text: [
+        {
+          em: "Vibrio natriegens",
+        },
+        {
+          text: " is a Gram-negative marine bacterium with a fast growth rate of 15.61 ± 0.18 min in the logarithmic phase, compared with 27.23 ± 0.69 min for ",
+        },
+        { em: "E. coli" },
+        {
+          text: " cells. Compared with common chassis organisms such as yeast and ",
+        },
+        { em: "E. coli" },
+        { text: ", " },
+        { em: "V. natriegens" },
+        {
+          text: " has a faster growth rate, a broader substrate spectrum, superior substrate uptake and an abundant number of ribosomes in the cell, which contributes to its excellent exogenous protein expression ability, so V. natriegens is a new type of chassis cell that has been developed in the field of biotechnology and synthetic biology in recent years. Based on its excellent biological properties, a variety of natural products and proteins, such as L-DOPA",
+        },
+        { citation: { text: "1", href: "./Reference.html?citation=1" } },
+        { text: ", melanin" },
+        { citation: { text: "2", href: "./Reference.html?citation=2" } },
+        { text: ", c-type cytochromes" },
+        { citation: { text: "3", href: "./Reference.html?citation=3" } },
+        {
+          text: " and other substances, have been efficiently biosynthesized in ",
+        },
+        { em: "V. natriegens" },
+        {
+          text: ". Moreover, Vibrio exhibits robust applicability to commonly used synthetic biology parts. The synthetic biology tools for the ",
+        },
+        { em: "V. natriegens" },
+        { text: " are maturing, which shows further promises. " },
+      ],
     },
   ],
   text3: [

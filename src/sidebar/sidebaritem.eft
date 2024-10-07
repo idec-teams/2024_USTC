@@ -1,5 +1,5 @@
 >a
-  %href={{href=home.html}}
+  %href={{href}}
   >li.sidebar-item.{{itemName}}
     >i.iconfont.icon
     >span.text

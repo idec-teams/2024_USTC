@@ -1,4 +1,3 @@
->div.tible-title.{{dif}}
+>div.table-title.{{dif}}
   @click=scroll
-  @hover=hover
   .{{title}}

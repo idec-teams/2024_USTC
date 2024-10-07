@@ -18,5 +18,6 @@ module.exports = {
   ],
   ignore: [
     "*.txt",
+    "@src/effect/tex-mml-chtml.js",
   ],
 };

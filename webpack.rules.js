@@ -22,10 +22,10 @@ module.exports = [
   // 	test  : /\.mdc$/,
   // 	loader: "./src/utils/loaders/markdown-loader/loaderComplete.js"
   // },
-  // {
-  // 	test  : /\.tex$/,
-  // 	loader: "./src/utils/loaders/katex-loader.js"
-  // },
+  {
+  	test  : /\.tex$/,
+  	loader: "@src/loaders/katex-loader.js"
+  },
   {
     test: /\.ef(t|ml)?$/, //eft和efml使用的loader是一样的
     loader: "eft-loader",

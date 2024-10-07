@@ -1,0 +1,4 @@
+>a.citation
+  #href={{href}}
+  >sup
+    .&[{{text}}&]
