@@ -24,19 +24,19 @@ const memberlist = {
     {
       name: "Jiong Hong",
       src: _JiongHong,
-      introduction: "hello",
+      introduction: "e-mail:hjiong@ustc.edu.cn   telephone:0551-63600705",
     },
     {
       name: "Qian Zhang",
       src: _QianZhang,
-      introduction: "hello",
+      introduction: "e-mail：zq8401@ustc.edu.cn",
     },
   ],
   Advisor: [
     {
       name: "Fengyuan Yang",
       src: _FengyuanYang,
-      introduction: "hello",
+      introduction: "Hi there! My name is Yang Fengyuan. I am from USTC and my passion lies in the field of biology. I love conducting experiments and exploring different facets of this fascinating subject. In my free time, I adore spending time with cats and find their company to be therapeutic. As a student of biology, I believe in the importance of hands-on learning and strive to develop a deeper understanding of the world around us through experimentation and research",
     },
     {
       name: "Jiamin Dong",
@@ -123,7 +123,7 @@ const memberlist = {
     {
       name: "Yangzhi Wang",
       src: _YangzhiWang,
-      introduction: "hello",
+      introduction: "Hello everyone! I'm Yangzhi Wang from USTC. I have a strong passion for biology and enjoy conducting experiments to unravel the intricate workings of life. Apart from my academic pursuits, I also have a love for gaming and find it to be a great way to unwind and connect with friends. Additionally, I am a big fan of cats and find their adorable and independent nature to be truly captivating. I am looking forward to exploring new scientific frontiers and sharing my experiences with fellow enthusiasts like you. Thank you for your attention!",
     },
     {
       name: "Sirui Fu",
