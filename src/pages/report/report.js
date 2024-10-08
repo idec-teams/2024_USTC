@@ -7,3 +7,4 @@ import "./report.css";
 textboxcreate(text);
 
 loadPDF("pdf", pdf, 1.37);
+$(".next").attr('href', 'supplementary-information.html');

@@ -7,6 +7,7 @@
   >div.logo
     >a
       #href=index.html
+      >div.USTC
       .USTC 2024 
   >div.search-box
   >div.nano.sidebar-contain
@@ -14,7 +15,7 @@
       >ul
   >div.bottom-contain
     >a
-      #href=#
+      #href=https://github.com/idec-teams/2024_USTC/tree/gh-pages
       >svg.github
         #xmlns=http://www.w3.org/2000/svg
         #viewBox=0 0 448 512

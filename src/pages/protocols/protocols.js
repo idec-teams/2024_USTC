@@ -17,3 +17,5 @@ $(".container span").each(function () {
   i++;  // 递增索引
 });
 i=0;
+
+$(".next").attr('href', 'supplementary-information.html');

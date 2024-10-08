@@ -95,10 +95,12 @@ a {
   position: relative;
   background: var(--sidebar-color);
 }
-.sidebar-item{
+
+.sidebar-item {
   font-size: 18px;
   background: var(--sidebar-item-color);
 }
+
 .sidebar-sub-toggle .angle-down {
   position: absolute;
   top: 50%;
@@ -162,20 +164,21 @@ header {
   display: none;
 } */
 .none {
-  display: none!important;
+  display: none !important;
 }
 
 .sidebar-item-important {
   background: var(--sidebar-item-color-light) !important;
-  border-left:4px solid rgb(46, 164, 191)!important;
+  border-left: 4px solid rgb(46, 164, 191) !important;
   color: white !important;
 }
 
 .sidebar-sub-toggle-important {
   background: var(--sidebar-color-light) !important;
-  border-left:4px solid rgb(46, 164, 191)!important;
+  border-left: 4px solid rgb(46, 164, 191) !important;
   color: white !important;
 }
+
 .sidebar-sub-toggle-clicked {
   background: var(--sidebar-color-light) !important;
   color: white !important;
@@ -202,4 +205,30 @@ header {
   font-size: 20px;
   font-weight: 750;
   color: #f5f5f5;
+}
+
+.next {
+  width: 100%;
+  background-color: black;
+  transition: all .3s ease;
+  opacity: .7;
+}
+
+.next div {
+  line-height: 60px;
+  text-align: center;
+  height: 60px;
+  width: 90px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+  position: fixed;
+  border-radius: 10px;
+  bottom: 20px;
+  right: 20px;
+}
+.next:hover{
+  opacity: .2;
 }

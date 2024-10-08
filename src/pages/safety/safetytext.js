@@ -1,3 +1,11 @@
+import _Figure1 from "@image/safety/safety1.png";
+import _Figure2 from "@image/safety/safety2.png";
+import _Figure3 from "@image/safety/safety3.png";
+import _Figure4 from "@image/safety/safety4.png";
+import _Figure5 from "@image/safety/safety5.png";
+import _Figure6 from "@image/safety/safety6.png";
+import _Figure7 from "@image/safety/safety7.png";
+
 const text = {
   title: [{ title: "Safety:" }],
   text1: [
@@ -35,15 +43,15 @@ const text = {
     {
       text: "These regulations cover a variety of topics, including but not limited to, the identification of a responsible person for overall safety measures, guidelines for fire and power safety, and specific rules governing the handling of hazardous chemical reagents, from purchase to storage. Proper and appropriate disposal methods for both chemical and biological waste are strictly adhered to as dictated by relevant safety guidelines. Lastly, biosafety measures are ingrained into all aspects of our experimental design and implementation to mitigate any potential risks.",
     },
-    { src: "", text: "" },
+    { src: _Figure1, text: "" },
     {
       subtitle: "Virtual simulation experiment",
       text: "The first is to accomplish virtual simulation experiment.In virtual simulation training,we use the virtual simulation experiment platform on the website https://vceb.ustc.edu.cn which was built by our university.",
     },
     { text: "On this platform, we can see the scene shown in the picture." },
-    { src: "", text: "" },
-    { src: "", text: "virtual simulation experiment" },
-    { src: "", text: "" },
+    { src: _Figure2, text: "" },
+    { src: _Figure3, text: "virtual simulation experiment" },
+    { src: _Figure4, text: "" },
     {
       text: "There we can practice virtual experimental operations, learn experimental safety and regulations",
     },
@@ -54,9 +62,9 @@ const text = {
     {
       text: "For emergency situations such as eye injuries, fires, emergency evacuation, etc., we are equipped with facilities such as eye wash stations, fire protection kits, and window breakers for timely and rapid response.",
     },
-    { src: "", text: "" },
-    { src: "", text: "Laboratory safety facilities" },
-    { src: "", text: "" },
+    { src: _Figure5, text: "" },
+    { src: _Figure6, text: "Laboratory safety facilities" },
+    { src: _Figure7, text: "" },
   ],
 };
 export default text;

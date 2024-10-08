@@ -55,6 +55,7 @@ module.exports = (env) => {
             template: path.resolve(__dirname, "src/index.html"),
             filename: path.resolve(__dirname, `docs/${page.location}.html`),
             chunks: page.chunks,
+            title:`USTC ${page.location}`,
           })
       ),
       new CopyWebpackPlugin({
@@ -85,7 +86,7 @@ module.exports = (env) => {
         "@src": path.resolve(__dirname, "src/"),
         "@pages": path.resolve(__dirname, "src/pages/"),
         "@member": path.resolve(__dirname, "src/image/member/"),
-        "@figure": path.resolve(__dirname, "src/image/figure/"),
+        "@image": path.resolve(__dirname, "src/image/"),
       },
       extensions: [".efml", ".json", ".js", ".eft"],
       roots: [path.resolve(__dirname, "src")],

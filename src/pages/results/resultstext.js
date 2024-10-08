@@ -1,11 +1,8 @@
-import _Figure1 from "@figure/figure1.png";
-import _Figure2 from "@figure/figure2.png";
-import _Figure3 from "@figure/figure3.png";
-import _Figure4 from "@figure/figure4.png";
-import _Figure5 from "@figure/figure5.png";
-import _Figure6 from "@figure/figure6.png";
-import _Figure7 from "@figure/figure7.png";
-import _Figure8 from "@figure/figure8.png";
+import _Results1 from "@image/results/results1.png";
+import _Results2 from "@image/results/results2.png";
+import _Results3 from "@image/results/results3.png";
+import _Results4 from "@image/results/results4.png";
+
 const text = {
   title: [{ title: "Results" }],
   text1: [
@@ -38,14 +35,36 @@ const text = {
     },
     {
       src: _Figure2,
-      text: "Figure 2. Electropherogram of colony PCR results. (A) Colony PCR result of E. coli clones containing pACYCDuet-OMT3-CHI-CHS. (B) Colony PCR result of E. coli clone containing pETDuet-T7RNAP-4CL-TAL",
+      text: [
+        {
+          text: "Figure 2. Electropherogram of colony PCR results. (A) Colony PCR result of ",
+        },
+        { em: "E. coli " },
+        {
+          text: "clones containing pACYCDuet-OMT3-CHI-CHS. (B) Colony PCR result of ",
+        },
+        { em: "E. coli " },
+        { text: "clone containing pETDuet-T7RNAP-4CL-TAL" },
+      ],
     },
     {
       text: "And we also constructed the pACYC177-J23106-TtgR(L66A/N110A)-Pttg1/2-GFP and pUC57-CHS(F153V/A82M) by means of single mutations.",
     },
     {
       src: _Figure3,
-      text: "Figure 3. Electropherogram of colony PCR results. (A) Colony PCR result of E. coli clones containing pUC57-CHS(F153V/A82M). (B) Colony PCR result of E. coli clone containing pACYC177-J23106-TtgR(L66A/N110A)-Pttg1/2-GFP.",
+      text: [
+        {
+          text: "Figure 3. Electropherogram of colony PCR results. (A) Colony PCR result of ",
+        },
+        { em: "E. coli " },
+        {
+          text: "clones containing pUC57-CHS(F153V/A82M). (B) Colony PCR result of ",
+        },
+        { em: "E. coli" },
+        {
+          text: "clone containing pACYC177-J23106-TtgR(L66A/N110A)-Pttg1/2-GFP.",
+        },
+      ],
     },
     {
       text: [
@@ -60,14 +79,30 @@ const text = {
   text2: [
     {
       subtitle: "Biosensor Validation",
-      text: "It is noteworthy that naringenin itself, as a flavonoid, has an inhibitory effect on the growth of V. natriegens. This was found through the comparative graphs of growth curves, which may likewise affect the effect of protein expression. ",
+      text: [
+        {
+          text: "It is noteworthy that naringenin itself, as a flavonoid, has an inhibitory effect on the growth of ",
+        },
+        { em: "V. natriegens. " },
+        {
+          text: "This was found through the comparative graphs of growth curves, which may likewise affect the effect of protein expression.",
+        },
+      ],
     },
     {
       src: _Figure5,
-      text: "Figure 5. Verifying the effectivity of TtgR-GFP sensor. A. Growth curve of V.natriegens in different concentration of naringenin; B. Ratio of GFP fluorescence:OD600 (relative fluorescence intensity) under different concentration of naringenin; C. Relative fluorescence intensity under different concentration of naringenin.(B: 150min fitted curve R2 :0.775; 180min fitted curve R2 :0.943; 210min fitted curve R2 :0.782; 240min fitted curve R2 :0.958)",
+      text: [
+        {
+          text: "Figure 4. Verifying the effectivity of TtgR-GFP sensor. A. Growth curve of ",
+        },
+        { em: "V.natriegens " },
+        {
+          text: "in different concentration of naringenin; B. Ratio of GFP fluorescence:OD600 (relative fluorescence intensity) under different concentration of naringenin; C. Relative fluorescence intensity under different concentration of naringenin.(B: 150min fitted curve R2 :0.775; 180min fitted curve R2 :0.943; 210min fitted curve R2 :0.782; 240min fitted curve R2",
+        },
+      ],
     },
     {
-      text: "The GFP showed a certain fluorescence intensity without the addition of inducers, resulting in a certain fluorescence leakage. In the available data obtained, we get the expected, linear growth curve over a range of inducer concentrations. According to the fitted curve, the effect caused by background fluorescence gradually decreased with time, and the homogenized fluorescence intensity showed a relatively stable linear enhancement relationship with naringenin concentration after the incubation time reached 150 min. Although their homogenized values do not show a clear multiplicative relationship, their stable linear relationship proves that they can be used to assist High-through screening for directed evolution.",
+      text: "The GFP showed a certain fluorescence intensity without the addition of inducers, resulting in a certain fluorescence leakage. In the available data obtained, we get the expected, linear growth curve over a range of inducer concentrations. According to the fitted curve, the effect caused by background fluorescence gradually decreased with time, and the homogenized fluorescence intensity showed a relatively stable linear enhancement relationship with naringenin concentration after the incubation time reached 150 min. Although the homogenized relative fluorescence units (RFU) values do not show a clear multiplicative relationship, their stable linear relationship proves that they can be used to assist High-through screening for directed evolution.",
     },
   ],
 };

@@ -148,12 +148,12 @@ $(document).ready(function () {
     .filter(function () {
       var linkPath = $(this).attr("href");
       if (!linkPath) return false;
-      var normalizedLinkPath = linkPath.replace(/^\//, "");
-      var normalizedCurrentPath = currentPath.replace(/^\//, "");
-
+      var normalizedLinkPath = linkPath.replace(/^\//, "").split("/").pop().replace(/\.html$/, "");
+      var normalizedCurrentPath = currentPath.replace(/^\//, "").split("/").pop().replace(/\.html$/, "");
       return normalizedLinkPath === normalizedCurrentPath;
     })
     .each(function () {
+      
       $(this).find(".sidebar-item").addClass("sidebar-item-important");
       $(this).closest("ul.nav-bar").slideDown(300);
       const sidebarToggle = $(this)
