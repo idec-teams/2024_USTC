@@ -20,7 +20,7 @@
 new C_Users_MuTur_Desktop_2024_USTC_src_table_table_js__WEBPACK_IMPORTED_MODULE_2__["default"]().$mount({
   target: document.body
 });
-$(".next").attr('href', './supplementary-information.html');
+$(".next").attr('href', './design.html');
 
 /***/ }),
 

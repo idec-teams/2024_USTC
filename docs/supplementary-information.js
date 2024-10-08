@@ -18,7 +18,7 @@
 
 
 (0,C_Users_MuTur_Desktop_2024_USTC_src_pdf_loadPDF_js__WEBPACK_IMPORTED_MODULE_3__["default"])("pdf", C_Users_MuTur_Desktop_2024_USTC_src_pdf_USTC_supplemantary_info_pdf__WEBPACK_IMPORTED_MODULE_2__, 1.37);
-$(".next").attr('href', 'supplementary-information.html');
+$(".next").attr('href', 'Reference.html');
 
 /***/ }),
 

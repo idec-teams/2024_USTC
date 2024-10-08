@@ -20,7 +20,7 @@
 new C_Users_MuTur_Desktop_2024_USTC_src_table_table_js__WEBPACK_IMPORTED_MODULE_2__["default"](C_Users_MuTur_Desktop_2024_USTC_src_pages_results_resultstext_js__WEBPACK_IMPORTED_MODULE_0__["default"]).$mount({
   target: document.body
 });
-$(".next").attr('href', 'supplementary-information.html');
+$(".next").attr('href', 'discussion.html');
 
 /***/ }),
 
@@ -52,11 +52,11 @@ var text = {
     }, {
       em: "V. natriegens' "
     }, {
-      text: "genome and the relatively more complex method to modify its genome, we constructed a T7 RNAP expression cassette. When choosing the plasmid backbone, we found that"
+      text: "genome and the relatively more complex method to modify its genome, we constructed a T7 RNAP expression cassette. When choosing the plasmid backbone, we found that "
     }, {
       em: "V. natriegens"
     }, {
-      text: "can only recognize a few replication origins like f1-ori and p15A-ori, and plasmids with pMB1/pBR322/pUC origin cannot replicate in it. Due to plasmid incompatibility, we chose pETDuet-1 and pACYCDuet-1 as the backbone. The two plasmids have different origins of replication so they can co-exist in "
+      text: " can only recognize a few replication origins like f1-ori and p15A-ori, and plasmids with pMB1/pBR322/pUC origin cannot replicate in it. Due to plasmid incompatibility, we chose pETDuet-1 and pACYCDuet-1 as the backbone. The two plasmids have different origins of replication so they can co-exist in "
     }, {
       em: "V. natriegens."
     }, {

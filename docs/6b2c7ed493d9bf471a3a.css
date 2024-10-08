@@ -1,0 +1,90 @@
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/index/index.css ***!
+  \*****************************************************************************/
+#welcome {
+  height: 800px;
+  width: 100%;
+  background-color: black;
+}
+
+.scroll-message {
+  /* min-width: 800px; */
+  color: aliceblue;
+  position: fixed;
+  /* top: 20px; */
+  /* width: 700px; */
+  left: 50%;
+
+  font-size: 40px;
+  opacity: 1;
+  /* 初始状态为可见 */
+  letter-spacing: 0px;
+  /* 初始字母间距 */
+  filter: blur(0px);
+  /* 初始无模糊 */
+  transition: opacity 0.5s ease, letter-spacing 0.5s ease, filter 0.5s ease;
+  /* 过渡效果 */
+  white-space: nowrap;
+}
+.scroll-message:nth-child(1) {
+  top: 100px;
+  left:calc(100px + 15%);
+}
+
+.scroll-message:nth-child(2) {
+  top: 180px;
+  left:calc(100px + 15%);
+}
+
+.scroll-message:nth-child(3) {
+  text-align: right;
+  top: 700px;
+  right:10%;
+  /* width: 800px; */
+}
+
+.blur-fade-out {
+  animation: blur-fade-out 1.5s ease-out forwards;
+  /* 启用模糊消失动画 */
+}
+
+.clear-fade-in {
+  animation: clear-fade-in 1s ease forwards;
+  /* 启用清晰恢复动画 */
+}
+
+@keyframes blur-fade-out {
+  0% {
+    opacity: 1;
+    letter-spacing: 0px;
+    filter: blur(0px);
+  }
+
+  100% {
+    opacity: 0;
+    filter: blur(5px);
+    /* 增加模糊 */
+  }
+}
+
+@keyframes clear-fade-in {
+  0% {
+    opacity: 0;
+    letter-spacing: 30px;
+    filter: blur(5px);
+    /* 初始为模糊状态 */
+  }
+
+  100% {
+    opacity: 1;
+    letter-spacing: 0px;
+    filter: blur(0px);
+    /* 恢复到清晰状态 */
+  }
+}
+
+.photo {
+  width: 100%;
+}
+
+/*# sourceMappingURL=6b2c7ed493d9bf471a3a.css.map*/

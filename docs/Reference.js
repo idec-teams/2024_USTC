@@ -38,7 +38,7 @@ function highlightCitation(citation) {
     }, 500);
   }
 }
-$(".next").attr('href', 'supplementary-information.html');
+$(".next").attr('href', 'index.html');
 
 /***/ }),
 

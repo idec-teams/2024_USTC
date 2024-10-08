@@ -41,7 +41,7 @@ $(".mark").each(function () {
   $(this).html(renderedArray2[i % renderedArray2.length]);
   i++; // 递增索引
 });
-$(".next").attr("href", "supplementary-information.html");
+$(".next").attr("href", "report.html");
 
 /***/ }),
 
