@@ -8,12 +8,13 @@
 }
 
 .scroll-message {
+  /* min-width: 800px; */
   color: aliceblue;
   position: fixed;
   /* top: 20px; */
   /* width: 700px; */
   left: 50%;
-  transform: translateX(-50%);
+
   font-size: 40px;
   opacity: 1;
   /* 初始状态为可见 */
@@ -23,21 +24,22 @@
   /* 初始无模糊 */
   transition: opacity 0.5s ease, letter-spacing 0.5s ease, filter 0.5s ease;
   /* 过渡效果 */
+  white-space: nowrap;
 }
-
 .scroll-message:nth-child(1) {
   top: 100px;
-  left:400px;
+  left:calc(100px + 15%);
 }
 
 .scroll-message:nth-child(2) {
-  top: 140px;
-  left:400px;
+  top: 180px;
+  left:calc(100px + 15%);
 }
 
 .scroll-message:nth-child(3) {
-  top: 240px;
-  left:1000px;
+  text-align: right;
+  top: 700px;
+  right:10%;
   /* width: 800px; */
 }
 
@@ -60,7 +62,6 @@
 
   100% {
     opacity: 0;
-    letter-spacing: 30px;
     filter: blur(5px);
     /* 增加模糊 */
   }
@@ -86,4 +87,4 @@
   width: 100%;
 }
 
-/*# sourceMappingURL=aabc096143770b57073a.css.map*/
+/*# sourceMappingURL=6b2c7ed493d9bf471a3a.css.map*/

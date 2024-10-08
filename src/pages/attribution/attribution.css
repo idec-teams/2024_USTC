@@ -12,6 +12,7 @@ th, td {
   height: 60px; /* 行高 */
   padding: 4px; /* 内边距 */
   font-size: 14pt;
+  text-align: center;
 }
 
 tr:nth-child(odd) {

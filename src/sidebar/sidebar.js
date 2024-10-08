@@ -9,7 +9,8 @@ import Sidebar from "./sidebar.eft";
 import Sidebarsubtoggle from "./sidebarsubtoggle.eft";
 import Sidebaritem from "./sidebaritem.eft";
 import sidebarlist from "./sidebarlist.json";
-new Sidebar().$mount({ target: document.body });
+import img from "./img.png"
+new Sidebar({$data:{src:img}}).$mount({ target: document.body });
 for (let [key, value] of Object.entries(sidebarlist)) {
   let sidebarsubtoggle = null;
   if (value.link) {

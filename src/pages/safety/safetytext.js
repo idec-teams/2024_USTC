@@ -50,8 +50,8 @@ const text = {
     },
     { text: "On this platform, we can see the scene shown in the picture." },
     { src: _Figure2, text: "" },
-    { src: _Figure3, text: "virtual simulation experiment" },
-    { src: _Figure4, text: "" },
+    { src: _Figure3, text: "" },
+    { src: _Figure4, text: "virtual simulation experiment" },
     {
       text: "There we can practice virtual experimental operations, learn experimental safety and regulations",
     },
@@ -63,8 +63,8 @@ const text = {
       text: "For emergency situations such as eye injuries, fires, emergency evacuation, etc., we are equipped with facilities such as eye wash stations, fire protection kits, and window breakers for timely and rapid response.",
     },
     { src: _Figure5, text: "" },
-    { src: _Figure6, text: "Laboratory safety facilities" },
-    { src: _Figure7, text: "" },
+    { src: _Figure6, text: "" },
+    { src: _Figure7, text: "Laboratory safety facilities" },
   ],
 };
 export default text;

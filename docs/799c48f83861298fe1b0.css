@@ -151,7 +151,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  /* font-size: 24px; */
+  font-size: 24px;
   /* flex-direction: column; */
 }
 
@@ -194,7 +194,7 @@ a {
 
 .bottom-contain {
   height: 60px;
-  margin-top: auto;
+  /* margin-top: auto; */
 }
 
 .nav-bar {
@@ -264,8 +264,9 @@ header {
 }
 
 .github {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
+  margin: 10px;
 }
 
 .bottom-contain a {
@@ -274,6 +275,9 @@ header {
   justify-content: center;
   opacity: 1;
   transition: all .3s ease;
+  transform: translateY(-20px);
+  /* bottom: 10px; */
+  /* margin: 10px; */
 }
 
 .bottom-contain a:hover {
@@ -382,4 +386,4 @@ sup:hover{
   color:cornflowerblue;
 }
 
-/*# sourceMappingURL=524263a84ca05cc8d70d.css.map*/
+/*# sourceMappingURL=799c48f83861298fe1b0.css.map*/

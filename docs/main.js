@@ -420,6 +420,7 @@ new _next_eft__WEBPACK_IMPORTED_MODULE_3__["default"]().$mount({
 /* harmony import */ var _sidebarsubtoggle_eft__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sidebarsubtoggle.eft */ "./src/sidebar/sidebarsubtoggle.eft");
 /* harmony import */ var _sidebaritem_eft__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./sidebaritem.eft */ "./src/sidebar/sidebaritem.eft");
 /* harmony import */ var _sidebarlist_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./sidebarlist.json */ "./src/sidebar/sidebarlist.json");
+/* harmony import */ var _img_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./img.png */ "./src/sidebar/img.png");
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -438,7 +439,12 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
-new _sidebar_eft__WEBPACK_IMPORTED_MODULE_4__["default"]().$mount({
+
+new _sidebar_eft__WEBPACK_IMPORTED_MODULE_4__["default"]({
+  $data: {
+    src: _img_png__WEBPACK_IMPORTED_MODULE_8__
+  }
+}).$mount({
   target: document.body
 });
 var _loop = function _loop() {
@@ -624,7 +630,7 @@ class Next extends (0,ef_core__WEBPACK_IMPORTED_MODULE_0__.create)([{t:'a',a:{cl
 /* harmony export */ });
 /* harmony import */ var ef_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ef-core */ "./node_modules/ef-core/src/ef-core.js");
 
-class Sidebar extends (0,ef_core__WEBPACK_IMPORTED_MODULE_0__.create)([{t:'nav',a:{class:'sidebar-for-window',id:'sidebar'}},[{t:'div',a:{class:'checkbox'}},[{t:'svg',a:{class:'angle-down svg'}},[{t:'path',a:{fill:'#ffffff'}}]]],[{t:'div',a:{class:'logo'}},[{t:'a',a:{href:'index.html'}},[{t:'div',a:{class:'USTC'}}],'USTC 2024 ']],[{t:'div',a:{class:'search-box'}}],[{t:'div',a:{class:'nano sidebar-contain'}},[{t:'div',a:{class:'nano-content sidebar-itembox'}},[{t:'ul'}]]],[{t:'div',a:{class:'bottom-contain'}},[{t:'a',a:{href:'https://github.com/idec-teams/2024_USTC/tree/gh-pages'}},[{t:'svg',a:{class:'github',xmlns:'http://www.w3.org/2000/svg',viewBox:'0 0 448 512'}},[{t:'path',a:{d:'M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z',fill:'#f5f5f5'}}]],[{t:'span',a:{class:'githubtext'}},'Github']]]]) {
+class Sidebar extends (0,ef_core__WEBPACK_IMPORTED_MODULE_0__.create)([{t:'nav',a:{class:'sidebar-for-window',id:'sidebar'}},[{t:'div',a:{class:'checkbox'}},[{t:'svg',a:{class:'angle-down svg'}},[{t:'path',a:{fill:'#ffffff'}}]]],[{t:'div',a:{class:'logo'}},[{t:'a',a:{href:'index.html'}},[{t:'div',a:{class:'USTC'}}],'USTC 2024 ']],[{t:'div',a:{class:'search-box'}}],[{t:'div',a:{class:'nano sidebar-contain'}},[{t:'div',a:{class:'nano-content sidebar-itembox'}},[{t:'ul'}]]],[{t:'div',a:{class:'bottom-contain'}},[{t:'a',a:{href:'https://github.com/idec-teams/2024_USTC/tree/gh-pages'}},[{t:'img',a:{class:'github',src:[0,[['src']]]}}],[{t:'span',a:{class:'githubtext'}},'iDEC']]]]) {
 };
 
 
@@ -711,6 +717,17 @@ class Sidebarsubtoggle extends (0,ef_core__WEBPACK_IMPORTED_MODULE_0__.create)([
 "use strict";
 // extracted by mini-css-extract-plugin
 
+
+/***/ }),
+
+/***/ "./src/sidebar/img.png":
+/*!*****************************!*\
+  !*** ./src/sidebar/img.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img.png";
 
 /***/ }),
 

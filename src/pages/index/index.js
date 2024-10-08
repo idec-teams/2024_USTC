@@ -27,5 +27,5 @@ $(document).ready(function () {
   });
 });
 
-$(".next").attr('href', 'supplementary-information.html');
+$(".next").attr('href', 'members.html');
 

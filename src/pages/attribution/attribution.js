@@ -4,4 +4,4 @@ import table from "./table.eft";
 import "./attribution.css";
 textboxcreate(text);
 new table().$mount({ target: document.querySelector("#table") });
-$(".next").attr('href', './supplementary-information.html');
+$(".next").attr('href', './background.html');

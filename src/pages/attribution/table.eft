@@ -36,41 +36,39 @@
     >tr
       >th
         #scope=raw
-        .Fengyuan Yang
-      >td
-      >td
-      >td
-      >td
-      >td
-      >td
-      >td
-      >td
-      >td
-    >tr
-      >th
-        #scope=raw
         .Leheng Luo
       >td
+        .✅
       >td
       >td
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
     >tr
       >th
         #scope=raw
         .Yiheng Fan
       >td
       >td
+        .✅
       >td
       >td
       >td
+        .✅
       >td
       >td
+        .✅
       >td
+        .✅
       >td
     >tr
       >th
@@ -78,61 +76,81 @@
         .Hanyi Fu
       >td
       >td
+        .✅
       >td
       >td
       >td
       >td
       >td
+        .✅
       >td
+        .✅
       >td
     >tr
       >th
         #scope=raw
         .Xu Bao
       >td
+        .✅
       >td
       >td
       >td
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
       >td
     >tr
       >th
         #scope=raw
         .Nan Jiang
       >td
+        .✅
       >td
       >td
       >td
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
       >td
     >tr
       >th
         #scope=raw
         .Jiaze Sun
       >td
+        .✅
       >td
       >td
       >td
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
       >td
     >tr
       >th
         #scope=raw
         .Wenxin Yi
       >td
+        .✅
       >td
       >td
       >td
       >td
+        .✅
       >td
       >td
       >td
@@ -142,10 +160,12 @@
         #scope=raw
         .Zehui Yu
       >td
+        .✅
       >td
       >td
       >td
       >td
+        .✅
       >td
       >td
       >td
@@ -155,12 +175,15 @@
         #scope=raw
         .Aoqi Zhang
       >td
+        .✅
       >td
       >td
       >td
       >td
+        .✅
       >td
       >td
+        .✅
       >td
       >td
     >tr
@@ -170,24 +193,33 @@
       >td
       >td
       >td
+        .✅
+      >td
+      >td
+        .✅
       >td
       >td
       >td
+        .✅
       >td
-      >td
-      >td
+        .✅
     >tr
       >th
         #scope=raw
         .Tingxuan Kong
       >td
+        .✅
       >td
       >td
       >td
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
       >td
     >tr
       >th
@@ -198,9 +230,12 @@
       >td
       >td
       >td
+        .✅
       >td
       >td
+        .✅
       >td
+        .✅
       >td
     >tr
       >th
@@ -211,6 +246,7 @@
       >td
       >td
       >td
+        .✅
       >td
       >td
       >td
@@ -221,25 +257,34 @@
         .Sirui Fu
       >td
       >td
+        .✅
       >td
       >td
       >td
+        .✅
       >td
       >td
       >td
+        .✅
       >td
+        .✅
     >tr
       >th
         #scope=raw
         .Yiling Ma
       >td
+        .✅
       >td
       >td
       >td
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
       >td
+        .✅
       >td
     >tr
       >th
@@ -254,3 +299,4 @@
       >td
       >td
       >td
+        .✅

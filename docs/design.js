@@ -11,6 +11,7 @@
 /* harmony import */ var C_Users_MuTur_Desktop_2024_USTC_src_textbox_textbox_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/textbox/textbox.js */ "./src/textbox/textbox.js");
 /* harmony import */ var C_Users_MuTur_Desktop_2024_USTC_src_table_table_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/table/table.js */ "./src/table/table.js");
 /* harmony import */ var C_Users_MuTur_Desktop_2024_USTC_src_table_tablecontrol_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/table/tablecontrol.js */ "./src/table/tablecontrol.js");
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 
 (0,C_Users_MuTur_Desktop_2024_USTC_src_textbox_textbox_js__WEBPACK_IMPORTED_MODULE_1__["default"])(C_Users_MuTur_Desktop_2024_USTC_src_pages_design_designtext_js__WEBPACK_IMPORTED_MODULE_0__["default"]);
@@ -19,6 +20,7 @@
 new C_Users_MuTur_Desktop_2024_USTC_src_table_table_js__WEBPACK_IMPORTED_MODULE_2__["default"](C_Users_MuTur_Desktop_2024_USTC_src_pages_design_designtext_js__WEBPACK_IMPORTED_MODULE_0__["default"]).$mount({
   target: document.body
 });
+$(".next").attr('href', './results.html');
 
 /***/ }),
 
@@ -92,10 +94,9 @@ var text = {
       text: "For the high-throughput screening of directed evolution, we constructed multiple plasmids with different strengths of constitutive promoters controlling TtgR Repressor to obtain biosensors with appropriate sensitivity and more suitable for directed evolution. Meanwhile, to ensure that the system can work properly in "
     }, {
       em: "V. natriegens,"
-    },
-
-      // { citation: { text: "7", href: "./Reference.html?citation=7" } },
-    , {
+    },,
+    // { citation: { text: "7", href: "./Reference.html?citation=7" } },
+    {
       text: " we constructed plasmid versions of two different TtgR repressor operons. As mentioned in Xiong's article, the wild-type-derived TtgABC operon part could not successfully initiate the expression of red fluorescent protein (RFP) in "
     }, {
       em: "E. coli"
@@ -126,7 +127,16 @@ var text = {
     src: _image_design_figure6_png__WEBPACK_IMPORTED_MODULE_5__,
     text: "Figure 6.  Dual plasmid system for in high-throughput screening of V. natriegens"
   }, {
-    text: "During our research, we found that the mechanism of byproduct formation in CHS catalysis may involve lactonization-type ring closure, or it may be due to the release of catalytic intermediates from the catalytic site. Therefore, having a more stable protein structure may be a practical way to minimize byproduct formation. Xiang's[13] article mentions that T145M substitution leads to the formation of new hydrophobic bonds and possesses stronger stability values. Although the EbCHS we chose and the mutants originated from different organisms, we selected the mutation A82M and the neighboring N83K after the protein sequence comparison. Meanwhile, based on the increased naringenin abundance and yield in the article, we performed the mutations V37D, M96L, K219E, A296Q, and A297G, and verified the effect of the single-point mutation F153V, as well as the effect of multiple mutation combinations."
+    text: [{
+      text: "During our research, we found that the mechanism of byproduct formation in CHS catalysis may involve lactonization-type ring closure, or it may be due to the release of catalytic intermediates from the catalytic site. Therefore, having a more stable protein structure may be a practical way to minimize byproduct formation. Xiang's"
+    }, {
+      citation: {
+        text: "13",
+        href: "./Reference.html?citation=13"
+      }
+    }, {
+      text: " article mentions that T145M substitution leads to the formation of new hydrophobic bonds and possesses stronger stability values. Although the EbCHS we chose and the mutants originated from different organisms, we selected the mutation A82M and the neighboring N83K after the protein sequence comparison. Meanwhile, based on the increased naringenin abundance and yield in the article, we performed the mutations V37D, M96L, K219E, A296Q, and A297G, and verified the effect of the single-point mutation F153V, as well as the effect of multiple mutation combinations."
+    }]
   }]
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (text);

@@ -6,8 +6,8 @@ const text = {
     },
     {
       ollist: [
-        { text: "Preliminary research" },
-        { text: "Discuss about the direction and design of the subject" },
+        { text: "Preliminary research." },
+        { text: "Discuss about the direction and design of the subject." },
       ],
     },
   ],
@@ -17,21 +17,21 @@ const text = {
     },
     {
       ollist: [
-        { text: "Codon optimization model debugging" },
-        { text: "Gene synthesis" },
-        { text: "Plasmids construction for synthetic pathways" },
+        { text: "Codon optimization model debugging." },
+        { text: "Gene synthesis." },
+        { text: "Plasmids construction for synthetic pathways." },
         {
           text: [
             {
               text: "Investigation and optimization of culture conditions of ",
             },
-            { em: "Vibrio natriegens " },
+            { em: "Vibrio natriegens. " },
           ],
         },
         {
-          text: "Preparation and Transformation of chemically competent cells",
+          text: "Preparation and Transformation of chemically competent cells.",
         },
-        { text: "Colony PCR to check the result of transformation" },
+        { text: "Colony PCR to check the result of transformation." },
       ],
     },
   ],
@@ -39,15 +39,15 @@ const text = {
     { subtitle: "August" },
     {
       ollist: [
-        { text: "Preparation of electrocompetent cells and Electroporation" },
+        { text: "Preparation of electrocompetent cells and Electroporation." },
         {
           text: [
             { text: "Electroporation of the " },
-            { em: "Vibrio natriegens" },
+            { em: "Vibrio natriegens." },
           ],
         },
-        { text: "Colony PCR to check the result of transformation" },
-        { text: "Mutation library construction" },
+        { text: "Colony PCR to check the result of transformation." },
+        { text: "Mutation library construction." },
       ],
     },
   ],
@@ -57,8 +57,8 @@ const text = {
     },
     {
       ollist: [
-        { text: "Biosensor Plasmids Construction and validation" },
-        { text: "Discuss about the direction and design of the subject" },
+        { text: "Biosensor Plasmids Construction and validation." },
+        { text: "Discuss about the direction and design of the subject." },
       ],
     },
   ],

@@ -26,4 +26,4 @@ function highlightCitation(citation) {
     $("html, body").animate({ scrollTop: offset }, 500);
   }
 }
-$(".next").attr('href', 'supplementary-information.html');
+$(".next").attr('href', 'index.html');

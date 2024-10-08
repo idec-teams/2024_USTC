@@ -22,7 +22,7 @@
 new C_Users_MuTur_Desktop_2024_USTC_src_table_table_js__WEBPACK_IMPORTED_MODULE_3__["default"](C_Users_MuTur_Desktop_2024_USTC_src_pages_safety_safetytext_js__WEBPACK_IMPORTED_MODULE_1__["default"]).$mount({
   target: document.body
 });
-$(".next").attr('href', 'supplementary-information.html');
+$(".next").attr('href', 'notebook.html');
 
 /***/ }),
 
@@ -89,10 +89,10 @@ var text = {
     text: ""
   }, {
     src: _image_safety_safety3_png__WEBPACK_IMPORTED_MODULE_2__,
-    text: "virtual simulation experiment"
+    text: ""
   }, {
     src: _image_safety_safety4_png__WEBPACK_IMPORTED_MODULE_3__,
-    text: ""
+    text: "virtual simulation experiment"
   }, {
     text: "There we can practice virtual experimental operations, learn experimental safety and regulations"
   }, {
@@ -105,10 +105,10 @@ var text = {
     text: ""
   }, {
     src: _image_safety_safety6_png__WEBPACK_IMPORTED_MODULE_5__,
-    text: "Laboratory safety facilities"
+    text: ""
   }, {
     src: _image_safety_safety7_png__WEBPACK_IMPORTED_MODULE_6__,
-    text: ""
+    text: "Laboratory safety facilities"
   }]
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (text);

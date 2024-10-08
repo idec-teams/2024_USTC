@@ -13,7 +13,7 @@
 
 
 (0,C_Users_MuTur_Desktop_2024_USTC_src_textbox_textbox_js__WEBPACK_IMPORTED_MODULE_1__["default"])(C_Users_MuTur_Desktop_2024_USTC_src_pages_discussion_discussiontext_js__WEBPACK_IMPORTED_MODULE_0__["default"]);
-$(".next").attr('href', 'supplementary-information.html');
+$(".next").attr('href', 'safety.html');
 
 /***/ }),
 

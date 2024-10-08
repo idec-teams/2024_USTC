@@ -15,6 +15,7 @@ th, td {
   height: 60px; /* 行高 */
   padding: 4px; /* 内边距 */
   font-size: 14pt;
+  text-align: center;
 }
 
 tr:nth-child(odd) {
@@ -25,4 +26,4 @@ tr:nth-child(even) {
   background-color: #ffffff; /* 偶数行背景色 */
 }
 
-/*# sourceMappingURL=8054f1490397322e5e87.css.map*/
+/*# sourceMappingURL=315bb0dd02c5a20dde1c.css.map*/

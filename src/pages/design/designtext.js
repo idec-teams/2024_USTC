@@ -66,9 +66,11 @@ const text = {
           text: "For the high-throughput screening of directed evolution, we constructed multiple plasmids with different strengths of constitutive promoters controlling TtgR Repressor to obtain biosensors with appropriate sensitivity and more suitable for directed evolution. Meanwhile, to ensure that the system can work properly in ",
         },
         { em: "V. natriegens," },
-        // { citation: { text: "7", href: "./Reference.html?citation=7" } },
         ,
-        { text: " we constructed plasmid versions of two different TtgR repressor operons. As mentioned in Xiong's article, the wild-type-derived TtgABC operon part could not successfully initiate the expression of red fluorescent protein (RFP) in " },
+        // { citation: { text: "7", href: "./Reference.html?citation=7" } },
+        {
+          text: " we constructed plasmid versions of two different TtgR repressor operons. As mentioned in Xiong's article, the wild-type-derived TtgABC operon part could not successfully initiate the expression of red fluorescent protein (RFP) in ",
+        },
         { em: "E. coli" },
         {
           text: ", a T/A mutation was introduced at the tenth base site of this operon to obtain the TtgABC2 sequence, which is proven to successfully initiate downstream gene expression. We detect the fluorescence intensity by enzyme-labeled instrument, and monitor the cellular OD600 at the same time. Finally, we homogenize the data by fluorescence intensity/cell density, so as to evaluate the correspondence between different inducer concentrations and fluorescence intensity.",
@@ -93,14 +95,30 @@ const text = {
   text4: [
     {
       subtitle: "Directed Evolution of CHS",
-      text: [{text:"The designed and constructed intracellular biosensor can reflect the amount of product by fluorescence intensity. CHS can catalyze p-coumaroyl coenzyme A in one step to obtain detectable naringenin chalcone. However, the price of p-coumaroyl coenzyme A is relatively high, so we decided to use its precursor, p-coumaric acid, as a substrate. Then we inserted the mutant sequence of CHS and CHI gene into the constructed pACYCDuet-1-4CL to obtain a series of plasmids for targeted evolutionary effect detection. Ultimately, the TtgR-GFP biosensor will be applied to detect the concentration of naringenin in vivo, which can reflex the result of direct evolution of CHS. As shown in Figure 6, we will transform both plasmids into "},{em:"V. natriegens."},{text:" With the combination of 4CL, CHS and CHI, the bacterium can produce naringenin from p-coumalic acid. The catalyst ability varies among different CHS mutants, resulting in various naringenin concentration in different clones. Compared to HPLC, biosensor can reflex real-time naringenin concentration and can save time from preparing the samples for HPLC, making it a useful tool in directed evolution."}],
+      text: [
+        {
+          text: "The designed and constructed intracellular biosensor can reflect the amount of product by fluorescence intensity. CHS can catalyze p-coumaroyl coenzyme A in one step to obtain detectable naringenin chalcone. However, the price of p-coumaroyl coenzyme A is relatively high, so we decided to use its precursor, p-coumaric acid, as a substrate. Then we inserted the mutant sequence of CHS and CHI gene into the constructed pACYCDuet-1-4CL to obtain a series of plasmids for targeted evolutionary effect detection. Ultimately, the TtgR-GFP biosensor will be applied to detect the concentration of naringenin in vivo, which can reflex the result of direct evolution of CHS. As shown in Figure 6, we will transform both plasmids into ",
+        },
+        { em: "V. natriegens." },
+        {
+          text: " With the combination of 4CL, CHS and CHI, the bacterium can produce naringenin from p-coumalic acid. The catalyst ability varies among different CHS mutants, resulting in various naringenin concentration in different clones. Compared to HPLC, biosensor can reflex real-time naringenin concentration and can save time from preparing the samples for HPLC, making it a useful tool in directed evolution.",
+        },
+      ],
     },
     {
       src: _Figure6,
       text: "Figure 6.  Dual plasmid system for in high-throughput screening of V. natriegens",
     },
     {
-      text: "During our research, we found that the mechanism of byproduct formation in CHS catalysis may involve lactonization-type ring closure, or it may be due to the release of catalytic intermediates from the catalytic site. Therefore, having a more stable protein structure may be a practical way to minimize byproduct formation. Xiang's[13] article mentions that T145M substitution leads to the formation of new hydrophobic bonds and possesses stronger stability values. Although the EbCHS we chose and the mutants originated from different organisms, we selected the mutation A82M and the neighboring N83K after the protein sequence comparison. Meanwhile, based on the increased naringenin abundance and yield in the article, we performed the mutations V37D, M96L, K219E, A296Q, and A297G, and verified the effect of the single-point mutation F153V, as well as the effect of multiple mutation combinations.",
+      text: [
+        {
+          text: "During our research, we found that the mechanism of byproduct formation in CHS catalysis may involve lactonization-type ring closure, or it may be due to the release of catalytic intermediates from the catalytic site. Therefore, having a more stable protein structure may be a practical way to minimize byproduct formation. Xiang's",
+        },
+        { citation: { text: "13", href: "./Reference.html?citation=13" } },
+        {
+          text: " article mentions that T145M substitution leads to the formation of new hydrophobic bonds and possesses stronger stability values. Although the EbCHS we chose and the mutants originated from different organisms, we selected the mutation A82M and the neighboring N83K after the protein sequence comparison. Meanwhile, based on the increased naringenin abundance and yield in the article, we performed the mutations V37D, M96L, K219E, A296Q, and A297G, and verified the effect of the single-point mutation F153V, as well as the effect of multiple mutation combinations.",
+        },
+      ],
     },
   ],
 };
