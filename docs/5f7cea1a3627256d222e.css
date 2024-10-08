@@ -1,0 +1,35 @@
+/*!*******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/safety/safety.css ***!
+  \*******************************************************************************/
+
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/table/table.css ***!
+  \***********************************************************************/
+.textbox-container{
+  margin-right: 200px !important;
+}
+.table-container{
+  transition: all .3s ease;
+  width: 160px;
+  /* background-color: aliceblue; */
+  border-top: 2px solid #4a4d76;
+  display: inline-block;
+  position: fixed;
+  top:20vh;
+  right: 20px;
+}
+.table-title{
+
+  margin:12px 4px ;
+  transform: scale(1);
+  transition: transform .3s ease;
+}
+.enlarged{
+   transform :scale(1.2);
+}
+.title{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=5f7cea1a3627256d222e.css.map*/

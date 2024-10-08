@@ -17,13 +17,13 @@ var _require = __webpack_require__(/*! katex */ "./node_modules/katex/dist/katex
 
 
 (0,C_Users_MuTur_Desktop_2024_USTC_src_textbox_textbox_js__WEBPACK_IMPORTED_MODULE_2__["default"])(C_Users_MuTur_Desktop_2024_USTC_src_pages_protocols_protocolstext_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
-var arr1 = ["p_0^k", "p_1^k", "q_0^k", "q_1^k"];
+var arr1 = ["p_0^k", "p_1^k", "q_0^k", "q_1^k", "(\\psi_{\\text{ICU1}}, \\psi _{\\text{CC2}}) ", " (\\psi_{\\text{ICU2}}, \\psi_{\\text{CC2}})"];
 var renderedArray1 = arr1.map(function (element) {
   return renderToString(element, {
     displayMode: false // 使用行内模式
   });
 });
-var arr2 = ["p_0^k", "p_1^k", "q_0^k", "q_1^k"];
+var arr2 = ["\\psi _{ICU}=-\\frac{\\sum_{k = 1}^{64} \\left\\lvert p^k_{0}-p^k_{1} \\right\\rvert  }{64}", " \\psi _{CC}=-\\frac{\\sum_{k = 1 }^{3904}\\left\\lvert q^k_0-q^k_1 \\right\\rvert   }{3904}", "\\textit{if } \\psi_{\\text{ICU1}} > \\psi_{\\text{ICU2}} \\text{ and } \\psi_{\\text{CC1}} \\geq \\psi_{\\text{CC2}}, \\text{ sequence 1 dominates sequence 2.}", "\\textit{if } \\psi_{\\text{ICU1}} \\geq \\psi_{\\text{ICU2}} \\text{ and } \\psi_{\\text{CC1}} > \\psi_{\\text{CC2}}, \\text{ sequence 1 dominates sequence 2.}", "\\textit{if } \\psi_{\\text{ICU1}} < \\psi_{\\text{ICU2}} \\text{ and } \\psi_{\\text{CC1}} \\leq \\psi_{\\text{CC2}}, \\text{ sequence 2 dominates sequence 1.}", "\\textit{if } \\psi_{\\text{ICU1}} \\leq \\psi_{\\text{ICU2}} \\text{ and } \\psi_{\\text{CC1}} < \\psi_{\\text{CC2}}, \\text{ sequence 2 dominates sequence 1.}"];
 var renderedArray2 = arr2.map(function (element) {
   return renderToString(element, {
     // displayMode: false,  // 使用行内模式
@@ -38,10 +38,10 @@ $(".container span").each(function () {
 i = 0;
 $(".mark").each(function () {
   // 使用当前元素替换内容
-  $(this).replaceWith(renderedArray2[i % renderedArray2.length]);
+  $(this).html(renderedArray2[i % renderedArray2.length]);
   i++; // 递增索引
 });
-$(".next").attr('href', 'supplementary-information.html');
+$(".next").attr("href", "supplementary-information.html");
 
 /***/ }),
 
@@ -167,13 +167,13 @@ var text = {
     subtitle: "PCR:",
     text: "We use Vazyme’s Phanta Max kit for amplifying the genes or fragments. The protocol was followed and the PCR product was purified using Vazyme’s FastPure Kit."
   }, {
-    subtitle: "Restriction Enzyme Digestion:",
+    subtitle: "Restriction Enzyme Digestion",
     text: "For digesting plasmids or fragments, we add 4μg plasmids or fragments, 3μL FastDigest Buffer in a 30μL system. The reaction liquid was then incubated under 37℃ for 30min then heated under 85℃ for 20min."
   }, {
     subtitle: "Point mutation:",
     text: "To mutate certain site in a gene in cloning vector (pUC19 or pUC57), we used primers with point mutation to linearize the plasmid and introduced the mutation to it. The linearized plasmid contains 15-20bp of homologous sequences (which contains the mutated site). It is recircled using Vazyme's CE II kit."
   }, {
-    subtitle: "Homologous Recombination: ",
+    subtitle: "Homologous Recombination ",
     text: "We used Vazyme’s CE II kit for single fragment insertion and Beyotime’s Seamless Clone kit for multi-fragments insertion. The reaction liquid was mixed by the instruction then incubated under 37℃ for 30min."
   }],
   text6: [{
@@ -186,7 +186,7 @@ var text = {
     }],
     text: " Unfreeze Trelief 5α Competent Cell on ice for about 15min. Then add no more than 10μL recombination product or 1μg plasmid to 100μL cell. Incubated on ice for 30min, then heat shock under 42℃ for 60s. Then after recover on ice for 3min, add 1mL LB to the competent cell, incubated under 37℃, 200rpm. Then spread the cell on LB agar plate with appropriate antibiotic."
   }, {
-    subtitle: "Plasmid extraction and sequencing: ",
+    subtitle: "Plasmid extraction and sequencing ",
     text: [{
       text: "Pick up a single colony of "
     }, {
@@ -195,7 +195,7 @@ var text = {
       text: "Trelief 5α containing the plasmid from the agar plate and add into LB liquid medium with appropriate antibiotic. Then culture under the condition of 37℃, 250rpm for 12-16h. Then use Sangon’s SanPrep kit (only pACYC plasmids) or Vazyme’s RapidLyse kit for plasmid extraction. The plasmid was then sent to Sangon Biotech for sequencing (Sanger Sequencing)."
     }]
   }, {
-    subtitle: "Colony PCR of bacteria:",
+    subtitle: "Colony PCR of bacteria",
     text: "Pick up a single colony on the plate and add into the PCR reaction liquid (RapidTaq) as template. PCR Procedure: 95℃ 10min – (95℃ 30s – 55℃ 15s – 72℃ 60s) 30 cycles – 72℃ 5min."
   }],
   text7: [{
@@ -212,10 +212,10 @@ var text = {
       text: "ATCC14048 grows well in 2216E and LB medium. V2 salts can be added to LB to make LBv2 medium. To make competent cell and perform transformation, only use BHIv2 medium."
     }]
   }, {
-    subtitle: "Preparation of antibiotic solution:",
+    subtitle: "Preparation of antibiotic solution",
     text: "For carbenicillin storage solution, dissolve 500mg carbenicillin disodium powder in water and volume to 10mL. For kanamycin storage solution, dissolve 300mg kanamycin sulfate powder in water and volume to 10mL. For chloramphenicol storage solution, dissolve 250mg chloramphenicol powder in anhydrate ethanol and volume to 10mL. All the storage solution was filtered with 0.22μm filter membrane and stored under -20℃. Add the storage solution to the medium under the ratio of 1:1000 when antibiotic is used."
   }, {
-    subtitle: "Preparation of medium:",
+    subtitle: "Preparation of medium",
     text: "LB medium: dissolve 5g yeast extract, 10g peptone, 10g sodium chloride in water and volume to 1L. To make solid medium, add another 20g agar. Then the medium is sterilized under 121℃ for 20min. To make 2216E or BHI medium, follow the instructions. To make BHIv2 or BHIv2 sucrose medium, sterilize BHI medium, v2 salt solution and sucrose solution separately and mix together after cooling down to room temperature."
   }]
 };
@@ -237,7 +237,7 @@ var text = {
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["vendors-node_modules_ef-core_src_ef-core_js","vendors-node_modules_jquery_dist_jquery_js","vendors-node_modules_katex_dist_katex_js","src_textbox_textbox_js"], () => (__webpack_exec__("./src/pages/protocols/protocols.js")));
+/******/ __webpack_require__.O(0, ["vendors-node_modules_ef-core_src_ef-core_js-node_modules_jquery_dist_jquery_js","vendors-node_modules_katex_dist_katex_js","src_textbox_textbox_js"], () => (__webpack_exec__("./src/pages/protocols/protocols.js")));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
