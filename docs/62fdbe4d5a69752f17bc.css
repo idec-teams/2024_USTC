@@ -1,0 +1,154 @@
+.container {
+  /* text-align: right; */
+  transition: all .3s ease;
+  margin-right: 20px;
+  margin-left: calc(var(--sidebar-width) + 20px);
+  min-width: 200px;
+}
+
+.title {
+  margin: 20px;
+  text-align: center;
+  width: auto;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+}
+
+.memberbox {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.member-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  transition: all 1s ease;
+}
+
+.member-photo-container {
+  overflow: hidden;
+  margin: 20px;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all .4s ease;
+}
+
+.member-photo {
+  width: 100%;
+  object-fit: contain;
+}
+
+.member-name {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.introduction {
+  padding: 20px;
+  font-size: 10px;
+  background-color: #d6d8e2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 248px;
+  clip-path: circle(0% at 50% 0%);
+  transform-origin: top center;
+  transition: clip-path 0.6s ease-out;
+  pointer-events: none;
+  border-radius: 20px;
+  top: 200px;
+}
+
+.introduction.show {
+  clip-path: circle(100% at 50% 0%);
+  pointer-events: auto;
+}
+
+.introduction.hide {
+  clip-path: circle(0% at 50% 0%);
+  pointer-events: none;
+}
+
+/* 展开动画 */
+@keyframes expand {
+  from {
+    clip-path: circle(0% at 50% 0%);
+  }
+
+  to {
+    clip-path: circle(100% at 50% 0%);
+  }
+}
+
+/* 收缩动画 */
+@keyframes collapse {
+  from {
+    clip-path: circle(100% at 50% 0%);
+  }
+
+  to {
+    clip-path: circle(0% at 50% 0%);
+  }
+}
+
+/* 遮罩层 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  pointer-events: none;
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+  transition: all 1s ease;
+}
+
+#Wenxin\ Yi {
+  width: auto;
+  height: 100%;
+  transform: scale(1.8) translateX(-10px) translateY(-20px);
+}
+
+#Yiling\ Ma,
+#Zehui\ Yu,
+#Leheng\ Luo {
+  transform: translateY(-30px);
+}
+
+#Shengteng\ Zhang,
+#Yangzhi\ Wang {
+  transform: translateY(-16px);
+}
+
+.textbox>.memberbox:nth-child(2) .member-photo-container {
+  border: 6px solid rgb(83, 107, 141);
+}
+
+.textbox>.memberbox:nth-child(4) .member-photo-container {
+  border: 6px solid rgb(95, 129, 174);
+}
+
+.textbox>.memberbox:nth-child(6) .member-photo-container {
+  border: 6px solid rgb(109, 142, 180);
+}
+
+.textbox>.memberbox:nth-child(8) .member-photo-container {
+  border: 6px solid rgb(152, 194, 229);
+}
+
+.textbox-container .container {
+  margin-left: 0;
+  margin-right: 0;
+}
