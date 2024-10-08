@@ -17,19 +17,30 @@ var _require = __webpack_require__(/*! katex */ "./node_modules/katex/dist/katex
 
 
 (0,C_Users_MuTur_Desktop_2024_USTC_src_textbox_textbox_js__WEBPACK_IMPORTED_MODULE_2__["default"])(C_Users_MuTur_Desktop_2024_USTC_src_pages_protocols_protocolstext_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
-var arr = ["p_0^k", "p_1^k", "q_0^k", "q_1^k"];
-var renderedArray = arr.map(function (element) {
+var arr1 = ["p_0^k", "p_1^k", "q_0^k", "q_1^k"];
+var renderedArray1 = arr1.map(function (element) {
   return renderToString(element, {
     displayMode: false // 使用行内模式
+  });
+});
+var arr2 = ["p_0^k", "p_1^k", "q_0^k", "q_1^k"];
+var renderedArray2 = arr2.map(function (element) {
+  return renderToString(element, {
+    // displayMode: false,  // 使用行内模式
   });
 });
 var i = 0;
 $(".container span").each(function () {
   // 使用当前元素替换内容
-  $(this).replaceWith(renderedArray[i % renderedArray.length]);
+  $(this).replaceWith(renderedArray1[i % renderedArray1.length]);
   i++; // 递增索引
 });
 i = 0;
+$(".mark").each(function () {
+  // 使用当前元素替换内容
+  $(this).replaceWith(renderedArray2[i % renderedArray2.length]);
+  i++; // 递增索引
+});
 $(".next").attr('href', 'supplementary-information.html');
 
 /***/ }),
