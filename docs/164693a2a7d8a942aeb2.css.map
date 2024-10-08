@@ -1,0 +1,1 @@
+{"version":3,"file":"164693a2a7d8a942aeb2.css","mappings":";;;AAAA;AACA;AACA;AACA;AACA;AACA","sources":["webpack://2024_ustc/./src/pages/protocols/protocols.css"],"sourcesContent":[".katex {\r\n  font-size: 12pt;\r\n}\r\n.container{\r\n  font-family: 'Times New Roman', Times, serif;\r\n}"],"names":[],"sourceRoot":""}
