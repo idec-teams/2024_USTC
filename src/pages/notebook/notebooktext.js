@@ -2,7 +2,7 @@ const text = {
   title: [{ title: "Notebook" }],
   text1: [
     {
-      subtitle: "June:",
+      subtitle: "June",
     },
     {
       ollist: [
@@ -13,7 +13,7 @@ const text = {
   ],
   text2: [
     {
-      subtitle: "July:",
+      subtitle: "July",
     },
     {
       ollist: [
@@ -36,7 +36,7 @@ const text = {
     },
   ],
   text3: [
-    { subtitle: "August:" },
+    { subtitle: "August" },
     {
       ollist: [
         { text: "Preparation of electrocompetent cells and Electroporation" },
@@ -53,7 +53,7 @@ const text = {
   ],
   text4: [
     {
-      subtitle: "September-October:",
+      subtitle: "September-October",
     },
     {
       ollist: [

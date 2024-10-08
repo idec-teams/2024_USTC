@@ -9,17 +9,17 @@
 
 /* harmony import */ var C_Users_MuTur_Desktop_2024_USTC_src_pages_report_reporttext_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/pages/report/reporttext.js */ "./src/pages/report/reporttext.js");
 /* harmony import */ var C_Users_MuTur_Desktop_2024_USTC_src_textbox_textbox_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/textbox/textbox.js */ "./src/textbox/textbox.js");
-/* harmony import */ var C_Users_MuTur_Desktop_2024_USTC_src_pdf_USTC_supplemantary_info_pdf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/pdf/USTC-supplemantary-info.pdf */ "./src/pdf/USTC-supplemantary-info.pdf");
-/* harmony import */ var C_Users_MuTur_Desktop_2024_USTC_src_pdf_loadPDF_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/pdf/loadPDF.js */ "./src/pdf/loadPDF.js");
-/* harmony import */ var _report_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./report.css */ "./src/pages/report/report.css");
+/* harmony import */ var _report_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./report.css */ "./src/pages/report/report.css");
+/* harmony import */ var C_Users_MuTur_Desktop_2024_USTC_src_pdf_2024_USTCiDEC_report_pdf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/pdf/2024-USTCiDEC-report.pdf */ "./src/pdf/2024-USTCiDEC-report.pdf");
+/* harmony import */ var C_Users_MuTur_Desktop_2024_USTC_src_pdf_loadPDF_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./src/pdf/loadPDF.js */ "./src/pdf/loadPDF.js");
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 
 
-
-
 (0,C_Users_MuTur_Desktop_2024_USTC_src_textbox_textbox_js__WEBPACK_IMPORTED_MODULE_1__["default"])(C_Users_MuTur_Desktop_2024_USTC_src_pages_report_reporttext_js__WEBPACK_IMPORTED_MODULE_0__["default"]);
-(0,C_Users_MuTur_Desktop_2024_USTC_src_pdf_loadPDF_js__WEBPACK_IMPORTED_MODULE_3__["default"])("pdf", C_Users_MuTur_Desktop_2024_USTC_src_pdf_USTC_supplemantary_info_pdf__WEBPACK_IMPORTED_MODULE_2__, 1.37);
+
+
+(0,C_Users_MuTur_Desktop_2024_USTC_src_pdf_loadPDF_js__WEBPACK_IMPORTED_MODULE_4__["default"])("pdf", C_Users_MuTur_Desktop_2024_USTC_src_pdf_2024_USTCiDEC_report_pdf__WEBPACK_IMPORTED_MODULE_3__, 1.37);
 $(".next").attr('href', 'supplementary-information.html');
 
 /***/ }),
@@ -82,20 +82,20 @@ function loadPDF(id, url, n) {
 
 /***/ }),
 
-/***/ "./src/pdf/USTC-supplemantary-info.pdf":
-/*!*********************************************!*\
-  !*** ./src/pdf/USTC-supplemantary-info.pdf ***!
-  \*********************************************/
+/***/ "./src/pdf/2024-USTCiDEC-report.pdf":
+/*!******************************************!*\
+  !*** ./src/pdf/2024-USTCiDEC-report.pdf ***!
+  \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "pdfs/USTC-supplemantary-info.pdf";
+module.exports = __webpack_require__.p + "pdfs/2024-USTCiDEC-report.pdf";
 
 /***/ })
 
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["vendors-node_modules_ef-core_src_ef-core_js","vendors-node_modules_jquery_dist_jquery_js","src_textbox_textbox_js"], () => (__webpack_exec__("./src/pages/report/report.js")));
+/******/ __webpack_require__.O(0, ["vendors-node_modules_ef-core_src_ef-core_js-node_modules_jquery_dist_jquery_js","src_textbox_textbox_js"], () => (__webpack_exec__("./src/pages/report/report.js")));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);

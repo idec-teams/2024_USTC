@@ -1,5 +1,8 @@
 .katex {
-  font-size: 12pt;
+  font-size: 13pt;
+}
+.mark{
+  text-align: center;
 }
 .container{
   font-family: 'Times New Roman', Times, serif;

@@ -7,7 +7,7 @@ import _Figure6 from "@image/safety/safety6.png";
 import _Figure7 from "@image/safety/safety7.png";
 
 const text = {
-  title: [{ title: "Safety:" }],
+  title: [{ title: "Safety" }],
   text1: [
     {
       subtitle: "Overview",

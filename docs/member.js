@@ -208,6 +208,8 @@ $(".member-container .introduction").on("click", function (e) {
 /* harmony import */ var C_Users_MuTur_Desktop_2024_USTC_src_image_member_FengyuanYang_jpeg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./src/image/member/FengyuanYang.jpeg */ "./src/image/member/FengyuanYang.jpeg");
 /* harmony import */ var C_Users_MuTur_Desktop_2024_USTC_src_image_member_YangzhiWang_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./src/image/member/YangzhiWang.jpg */ "./src/image/member/YangzhiWang.jpg");
 /* harmony import */ var C_Users_MuTur_Desktop_2024_USTC_src_image_member_ZichongXu_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./src/image/member/ZichongXu.jpg */ "./src/image/member/ZichongXu.jpg");
+/* harmony import */ var C_Users_MuTur_Desktop_2024_USTC_src_image_member_SiruiFu_jpg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./src/image/member/SiruiFu.jpg */ "./src/image/member/SiruiFu.jpg");
+
 
 
 
@@ -301,8 +303,8 @@ var memberlist = {
     introduction: "hello"
   }, {
     name: "Sirui Fu",
-    src: "",
-    introduction: "hello"
+    src: C_Users_MuTur_Desktop_2024_USTC_src_image_member_SiruiFu_jpg__WEBPACK_IMPORTED_MODULE_19__,
+    introduction: "My name is Fu Sirui, a sophomore student at the School of Life Sciences, University of Science and Technology of China. I am responsible for conducting experiments and computer modeling."
   }, {
     name: "Yiling Ma",
     src: C_Users_MuTur_Desktop_2024_USTC_src_image_member_YilingMa_jpg__WEBPACK_IMPORTED_MODULE_12__,
@@ -509,6 +511,16 @@ module.exports = __webpack_require__.p + "images/ShengtengZhang.jpg";
 
 /***/ }),
 
+/***/ "./src/image/member/SiruiFu.jpg":
+/*!**************************************!*\
+  !*** ./src/image/member/SiruiFu.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/SiruiFu.jpg";
+
+/***/ }),
+
 /***/ "./src/image/member/TingxuanKong.jpg":
 /*!*******************************************!*\
   !*** ./src/image/member/TingxuanKong.jpg ***!
@@ -592,7 +604,7 @@ module.exports = __webpack_require__.p + "images/ZichongXu.jpg";
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["vendors-node_modules_ef-core_src_ef-core_js","vendors-node_modules_jquery_dist_jquery_js","src_textbox_textbox_js"], () => (__webpack_exec__("./src/pages/member/member.js")));
+/******/ __webpack_require__.O(0, ["vendors-node_modules_ef-core_src_ef-core_js-node_modules_jquery_dist_jquery_js","src_textbox_textbox_js"], () => (__webpack_exec__("./src/pages/member/member.js")));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);

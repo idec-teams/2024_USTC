@@ -1,11 +1,10 @@
 import "@src/pages/index/index.css";
 import text from "@pages/index/indextext.js";
-import tableCreate from "@src/table/table.js";
-import "@src/table/tablecontrol.js";
 import textboxcreate from "@src/textbox/textbox.js";
+import photo from "./photo.png"
 textboxcreate(text);
-new tableCreate(text).$mount({ target: document.body });
-$("#welcome").replaceWith('<div id="welcome"><div class="scroll-message">滚动条不在顶部时的文字</div><div class="scroll-message">滚动条不在顶部时的文字</div><div class="scroll-message">滚动条不在顶部时的文字</div></div>');
+$("#welcome").replaceWith('<div id="welcome"><div class="scroll-message">Welcome to</div><div class="scroll-message">our Studies</div><div class="scroll-message">presented jointly by USTC</div></div>');
+$("#picture").closest(".textbox").replaceWith(`<img src="${photo}" class="photo">`);
 $(document).ready(function () {
   // 页面初始状态，检查滚动条是否在顶部并设置文字样式
   if ($(window).scrollTop() === 0) {

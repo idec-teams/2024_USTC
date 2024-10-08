@@ -17,6 +17,7 @@ import _QianZhang from "@member/QianZhang.jpg";
 import _FengyuanYang from "@member/FengyuanYang.jpeg";
 import _YangzhiWang from "@member/YangzhiWang.jpg";
 import _ZichongXu from "@member/ZichongXu.jpg";
+import _SiruiFu from "@member/SiruiFu.jpg";
 
 const memberlist = {
   PI: [
@@ -126,8 +127,8 @@ const memberlist = {
     },
     {
       name: "Sirui Fu",
-      src: "",
-      introduction: "hello",
+      src: _SiruiFu,
+      introduction: "My name is Fu Sirui, a sophomore student at the School of Life Sciences, University of Science and Technology of China. I am responsible for conducting experiments and computer modeling.",
     },
     {
       name: "Yiling Ma",

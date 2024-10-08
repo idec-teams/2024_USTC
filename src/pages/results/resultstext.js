@@ -27,14 +27,14 @@ const text = {
       ],
     },
     {
-      src: _Figure1,
+      src: _Results1,
       text: "Figure 1. The structure of pACYCDuet-1-TAL-4CL and pETDuet-1-OMT3-CHI-CHS",
     },
     {
       text: "Ultimately, we successfully constructed the pETDuet-14CL-TAL and pACYCDuet-1-OMT3-CHI-CHS plasmids utilizing the AlTAL gene, At4CL gene, PfOMT3, EbCHI gene, and ErCHS gene.",
     },
     {
-      src: _Figure2,
+      src: _Results2,
       text: [
         {
           text: "Figure 2. Electropherogram of colony PCR results. (A) Colony PCR result of ",
@@ -51,7 +51,7 @@ const text = {
       text: "And we also constructed the pACYC177-J23106-TtgR(L66A/N110A)-Pttg1/2-GFP and pUC57-CHS(F153V/A82M) by means of single mutations.",
     },
     {
-      src: _Figure3,
+      src: _Results3,
       text: [
         {
           text: "Figure 3. Electropherogram of colony PCR results. (A) Colony PCR result of ",
@@ -90,7 +90,7 @@ const text = {
       ],
     },
     {
-      src: _Figure5,
+      src: _Results4,
       text: [
         {
           text: "Figure 4. Verifying the effectivity of TtgR-GFP sensor. A. Growth curve of ",
